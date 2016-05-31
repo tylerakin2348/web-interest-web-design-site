@@ -1,14 +1,17 @@
+/* General Styles */
 body {
     font-family: 'Roboto Condensed', sans-serif;
     background-color: rgb(230, 242, 255);
 }
+img {
+    border-style: none;
+}
+
+/* Heading Styles */
 .logoReal {
     height: 8em;
     margin-top: 11px;
-    margin-left: 10px;
-}
-img {
-    border-style: none;
+    margin-left: 3px;
 }
 #top-header {
     padding-bottom: 0px;
@@ -30,14 +33,20 @@ img {
     padding: 10px;
     list-style: none;
 }
+.menu li a:hover {
+  text-decoration: underline;
+}
 a {
     float: left;
     display: inline;
     padding-right: 20px;
     text-decoration: none;
 }
+
+/* Design Style Block*/
+
 #template-block {
-    width: 32%;
+    width: 100%;
     height: 230px;
     margin-left: 10px;
     margin-top: 250px;
@@ -45,7 +54,7 @@ a {
     border-radius: 50px;
 }
 #wordpress-block {
-    width: 32%;
+    width: 100%;
     height: 230px;
     margin-left: 10px;
     margin-top: 250px;
@@ -53,32 +62,23 @@ a {
     border-radius: 50px;
 }
 #custom-work-block {
-    width: 29%;
+    width: 100%;
     height: 230px;
     margin-left: 10px;
     padding-bottom: 0px;
     border-radius: 50px;
 }
 #arrow-click {
-    width: 700px;
+    width: 400px;
     margin-top: 150px;
-    margin-left: 300px;
+    margin-left: 0px;
 }
-#about-header {
-    margin-top: 100px;
-    margin-bottom: 80px;
-    text-align: center;
-    font-size: 2em;
-    color: rgb(51, 51, 51);
-}
-h2 {
-    display: block;
-    font-size: 1.5em;
-}
+/* About Styles */
+
 #tyler-about-pic {
-    width: 30%;
+    width: 100%;
     display: inline;
-    margin-left: 75px;
+    margin-left: 0px;
     margin-top: 45px;
     border-radius: 100px;
 }
@@ -87,117 +87,7 @@ h2 {
     display: inline;
     float: right;
     margin-top: 100px;
-    margin-right: 75px;
+    margin-right: 0px;
     font-size: 1.1em;
     line-height: 1.5em;
-}
-#contact-header {
-    margin-top: 100px;
-    margin-bottom: 80px;
-    text-align: center;
-    font-size: 2em;
-    color: rgb(51, 51, 51);
-}
-.contact-paragraph {
-    text-align: center;
-    display: block;
-    margin-top: 0px;
-    padding-bottom: 25px;
-    font-size: 1.1em;
-    line-height: 1em;
-  }
-  #foot {
-    color: rgb(51, 51, 51);
-    background-color: rgb(102, 179, 255);
-    height: 70px;
-    text-align: center;
-    padding-top: 35px;
-    margin-top: 30px;
-}
-#foot a {
-    text-align: center;
-    color: rgb(51, 51, 51);
-    float: none;
-    padding-right: 0px;
-}
-.design-labels-word {
-    float: inherit;
-    display: inline;
-    padding: 23px 166px 0px 170px;
-}
-.design-labels {
-    float: inherit;
-    display: inline;
-    padding: 0px 152px 0px 154px;
-}
-.maintainance-label {
-    padding-left: 154px;
-}
-#hidden-wordpress-photo {
-    width: 36%;
-    height: 250px;
-    display: inline;
-    margin-right: 355px;
-    margin-top: 0px;
-    position: relative;
-    border-radius: 0px;
-}
-#hidden-wordpress-photo-church {
-    width: 36%;
-    height: 250px;
-    display: inline;
-    margin-right: -10px;
-    margin-top: 0px;
-    position: relative;
-    border-radius: 0px;
-}
-.wordpress-hidden {
-    position: relative;
-    color: rgb(255, 255, 255);
-    margin-top: -229px;
-    margin-left: 495px;
-    width: 290px;
-    text-align: center;
-    font-size: 1.1em;
-}
-.design-info-word {
-    height: 250px;
-    margin-top: 50px;
-    background-color: rgb(102, 140, 255);
-    position: absolute;
-    font-family: 'Crimson Text', serif;
-}
-.design-info-scratch {
-    height: 250px;
-    margin-top: 50px;
-    background-color: rgb(51, 51, 51);
-    position: absolute;
-}
-#hidden-scratch-photo-center {
-    width: 36%;
-    display: inline;
-    margin-right: 0px;
-    margin-left: 360px;
-    margin-top: 3px;
-    position: relative;
-    border-width: 1px;
-    border-style: solid;
-    border-color: grey;
-    border-radius: 0px;
-  }
-  .main-navigation {
-    display: inline;
-    float: right;
-    position: relative;
-    color: rgb(51, 51, 51);
-    padding: 31px 10px;
-}
-li {
-  text-decoration: none;
-  list-style: none;
-  float: left;
-}
-.design-option-link {
-  float: none;
-  padding-right: 0px;
 }
