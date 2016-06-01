@@ -34,3 +34,12 @@ $("#maintainance-block").click(function() {
 $(".design-option-link").click(function() {
   return false;
 });
+
+// This controls smaller screen's show-nav function
+$("#show-nav").click(function() {
+  if ( $(".main-navigation").is(":hidden") ) {
+  $(".main-navigation").slideDown("slow");
+} else {
+  $(".main-navigation").slideUp("fast");
+}
+});

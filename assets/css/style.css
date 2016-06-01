@@ -1,10 +1,16 @@
 /* General Styles */
 body {
-    font-family: 'Roboto Condensed', sans-serif;
-    background-color: rgb(230, 242, 255);
+  font-family: 'Roboto Condensed', sans-serif;
+  background-color: rgb(230, 242, 255);
+  overflow-x: hidden;
 }
 img {
-    border-style: none;
+  border-style: none;
+}
+li {
+  text-decoration: none;
+  list-style: none;
+  float: left;
 }
 
 /* Heading Styles */
@@ -17,12 +23,19 @@ img {
     padding-bottom: 0px;
     height: 110px;
     display: block;
-    position: fixed;
+    position: absolute;
     clear: both;
     width: 100%;
     background-color: rgb(255, 102, 102);
     z-index: 100;
     margin: -28px 0px 100px;
+}
+.main-navigation {
+  display: inline;
+  float: right;
+  position: relative;
+  color: rgb(51, 51, 51);
+  padding: 31px 10px;
 }
 .menu li a {
     float: left;
@@ -41,6 +54,14 @@ a {
     display: inline;
     padding-right: 20px;
     text-decoration: none;
+}
+#show-nav {
+  background-color: rgb(230, 242, 255);
+  color: #333;
+  padding: 10px;
+  border: 1px solid #333;
+  text-align: center;
+  margin-left: 150px;
 }
 
 /* Design Style Block*/
@@ -73,12 +94,73 @@ a {
     margin-top: 150px;
     margin-left: 0px;
 }
+/* Hidden Design Block Styles */
+#hidden-wordpress-photo {
+    width: 36%;
+    height: 250px;
+    display: inline;
+    margin-right: 355px;
+    margin-top: 0px;
+    position: relative;
+    border-radius: 0px;
+}
+#hidden-wordpress-photo-church {
+    width: 36%;
+    height: 250px;
+    display: inline;
+    margin-right: -10px;
+    margin-top: 0px;
+    position: relative;
+    border-radius: 0px;
+}
+.wordpress-hidden {
+    position: relative;
+    color: rgb(255, 255, 255);
+    margin-top: -229px;
+    margin-left: 495px;
+    width: 290px;
+    text-align: center;
+    font-size: 1.1em;
+}
+.design-info-word {
+    height: 250px;
+    margin-top: 50px;
+    background-color: rgb(102, 140, 255);
+    position: absolute;
+    font-family: 'Crimson Text', serif;
+}
+.design-info-scratch {
+    height: 250px;
+    margin-top: 50px;
+    background-color: rgb(51, 51, 51);
+    position: absolute;
+}
+#hidden-scratch-photo-center {
+    width: 36%;
+    display: inline;
+    margin-right: 0px;
+    margin-left: 360px;
+    margin-top: 3px;
+    position: relative;
+    border-width: 1px;
+    border-style: solid;
+    border-color: grey;
+    border-radius: 0px;
+  }
+
 /* About Styles */
 
+#about-header {
+    margin-top: 100px;
+    margin-bottom: 80px;
+    text-align: center;
+    font-size: 2em;
+    color: rgb(51, 51, 51);
+}
 #tyler-about-pic {
-    width: 100%;
+    width: 75%;
     display: inline;
-    margin-left: 0px;
+    margin-left: 50px;
     margin-top: 45px;
     border-radius: 100px;
 }
@@ -86,8 +168,40 @@ a {
     text-align: center;
     display: inline;
     float: right;
-    margin-top: 100px;
-    margin-right: 0px;
+    margin-top: 75px;
+    margin: 30px 20px 75px 20px;
     font-size: 1.1em;
-    line-height: 1.5em;
+    line-height: 1.4em;
+}
+/* Contact Styles */
+#contact-header {
+    margin-top: 100px;
+    margin-bottom: 80px;
+    text-align: center;
+    font-size: 2em;
+    color: rgb(51, 51, 51);
+}
+.contact-paragraph {
+      text-align: center;
+      display: block;
+      margin-top: 0px;
+      padding-bottom: 25px;
+      font-size: 1.1em;
+      line-height: 1.2em;
+  }
+
+/* Footer Styles */
+#foot {
+  color: rgb(51, 51, 51);
+  background-color: rgb(102, 179, 255);
+  height: 70px;
+  text-align: center;
+  padding-top: 35px;
+  margin-top: 30px;
+}
+#foot a {
+    text-align: center;
+    color: rgb(51, 51, 51);
+    float: none;
+    padding-right: 0px;
 }

@@ -103,20 +103,6 @@
       font-size: 1.1em;
       line-height: 1em;
     }
-    #foot {
-      color: rgb(51, 51, 51);
-      background-color: rgb(102, 179, 255);
-      height: 70px;
-      text-align: center;
-      padding-top: 35px;
-      margin-top: 30px;
-  }
-  #foot a {
-      text-align: center;
-      color: rgb(51, 51, 51);
-      float: none;
-      padding-right: 0px;
-  }
   .design-labels-word {
       float: inherit;
       display: inline;
@@ -182,7 +168,7 @@
       border-color: grey;
       border-radius: 0px;
     }
-    .main-navigation {
+    /*.main-navigation {
       display: inline;
       float: right;
       position: relative;
@@ -193,9 +179,12 @@
     text-decoration: none;
     list-style: none;
     float: left;
-  }
+  }*/
   .design-option-link {
     float: none;
     padding-right: 0px;
   }
+}
+#show-nav {
+  /*display: none;*/
 }
