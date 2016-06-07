@@ -19,18 +19,30 @@ $("#custom-work-block").click(function() {
 });
 
 $(".design-info-maintain").hide();
-$("#maintainance-block").click(function() {
+$("#template-block").click(function() {
   if ( $(".design-info-maintain").is(":hidden") ) {
   $(".design-info-maintain").slideDown("slow");
 } else {
   $(".design-info-maintain").slideUp("fast");
 }
-  if ( $(".design-info-maintain").is(":visible") ) {
-    $("design-info-word").hide();
-    $("design-info-scratch").hide();
-  }
 });
 
 $(".design-option-link").click(function() {
   return false;
 });
+
+$(".main-navigation").hide();
+
+// This controls smaller screen's show-nav function
+$("#show-nav").click(function() {
+  if ( $(".main-navigation").is(":hidden") ) {
+  $(".main-navigation").slideDown("slow");
+} else {
+  $(".main-navigation").slideUp("fast");
+}
+});
+
+
+// $("#show-nav").click(function(){
+//    $(this).css("background-color", "rgb(230, 242, 255)");
+// });

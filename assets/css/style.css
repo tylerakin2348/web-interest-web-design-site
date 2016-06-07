@@ -1,35 +1,54 @@
 /* General Styles */
 body {
-    font-family: 'Roboto Condensed', sans-serif;
-    background-color: rgb(230, 242, 255);
+  font-family: 'Roboto Condensed', sans-serif;
+  background-color: rgb(230, 242, 255);
+  overflow-x: hidden;
 }
 img {
-    border-style: none;
+  border-style: none;
+}
+li {
+  text-decoration: none;
+  list-style: none;
+  float: left;
 }
 
 /* Heading Styles */
 .logoReal {
-    height: 8em;
+    height: 7em;
+    width: 300px;
     margin-top: 11px;
-    margin-left: 3px;
+    margin-left: 8px;
 }
 #top-header {
     padding-bottom: 0px;
     height: 110px;
     display: block;
-    position: fixed;
+    position: absolute;
     clear: both;
     width: 100%;
     background-color: rgb(255, 102, 102);
     z-index: 100;
     margin: -28px 0px 100px;
 }
+.main-navigation {
+  display: inline;
+  float: right;
+  position: relative;
+  color: rgb(51, 51, 51);
+<<<<<<< HEAD
+  padding: 0px 10px;
+  margin-top: -20px;
+=======
+  padding: 31px 10px;
+>>>>>>> origin/master
+}
 .menu li a {
     float: left;
-    margin-right: 20px;
     display: inline;
+    margin-right: 10px;
     color: rgb(51, 51, 51);
-    font-size: 1.3em;
+    font-size: 1em;
     padding: 10px;
     list-style: none;
 }
@@ -42,52 +61,283 @@ a {
     padding-right: 20px;
     text-decoration: none;
 }
+#show-nav {
+<<<<<<< HEAD
+  background-color: rgb(255, 102, 102);
+  color: #333;
+  width: 20%;
+  padding: 30px 0px 30px 0px;
+  margin: -117px 0px;
+  text-align: center;
+  /* margin: 0px 10px 0px 10px; */
+  border-radius: 0px;
+  /*border-top: 2px solid #333;
+  border-bottom: 2px solid #333;*/
+  float: right;
+}
+#show-nav:hover {
+  background-color: rgb(230, 242, 255);
+  border: 2px solid rgb(230, 242, 255);
+}
+=======
+  background-color: rgb(230, 242, 255);
+  color: #333;
+  padding: 10px;
+  border: 1px solid #333;
+  text-align: center;
+  margin-left: 150px;
+}
 
+>>>>>>> origin/master
 /* Design Style Block*/
-
+/*.block {
+  height: 100%;
+  padding-bottom: 0px;
+  border-radius: 5px;
+}*/
 #template-block {
-    width: 100%;
-    height: 230px;
-    margin-left: 10px;
-    margin-top: 250px;
-    padding-bottom: 0px;
-    border-radius: 50px;
+    width: 90%;
+    height: 15em;
+    margin-left: 5%;
+    margin-right: 5%;
+    margin-top: 150px;
+    border-radius: 100px;
 }
 #wordpress-block {
     width: 100%;
-    height: 230px;
-    margin-left: 10px;
-    margin-top: 250px;
-    padding-bottom: 0px;
-    border-radius: 50px;
+    height: 15em;
+    margin-left: 5%;
+    margin-right: 5%;
+    margin-top: 50px;
+    border-radius: 100px;
 }
 #custom-work-block {
-    width: 100%;
-    height: 230px;
-    margin-left: 10px;
-    padding-bottom: 0px;
-    border-radius: 50px;
+  width: 100%;
+  height: 15em;
+  margin-left: 5%;
+  margin-right: 5%;
+  margin-top: 50px;
+  border-radius: 100px;
 }
 #arrow-click {
     width: 400px;
     margin-top: 150px;
     margin-left: 0px;
 }
+/* Hidden Design Block Styles */
+#hidden-wordpress-photo {
+<<<<<<< HEAD
+    width: 100%;
+    height: 250px;
+    display: inline;
+    margin-right: 355px;
+    margin-top: 150px;
+=======
+    width: 36%;
+    height: 250px;
+    display: inline;
+    margin-right: 355px;
+    margin-top: 0px;
+>>>>>>> origin/master
+    position: relative;
+    border-radius: 0px;
+}
+#hidden-wordpress-photo-church {
+<<<<<<< HEAD
+    width: 100%;
+    height: 250px;
+    display: inline;
+    margin-right: -10px;
+    margin-top: 50px;
+=======
+    width: 36%;
+    height: 250px;
+    display: inline;
+    margin-right: -10px;
+    margin-top: 0px;
+>>>>>>> origin/master
+    position: relative;
+    border-radius: 0px;
+}
+.wordpress-hidden {
+    position: relative;
+    color: rgb(255, 255, 255);
+<<<<<<< HEAD
+    margin-top: 37px;
+    margin-left: 40px;
+    width: 320px;
+=======
+    margin-top: -229px;
+    margin-left: 495px;
+    width: 290px;
+>>>>>>> origin/master
+    text-align: center;
+    font-size: 1.1em;
+}
+.design-info-word {
+<<<<<<< HEAD
+  height: 250px;
+  margin: -750px 0px 0px 0px;
+  background-color: rgb(102, 140, 255);
+  position: absolute;
+  font-family: 'Crimson Text', serif;
+  width: 100%;
+  border-radius: 30px;
+}
+.design-info-scratch {
+  height: 250px;
+  margin: -550px 0px 0px 0px;
+  background-color: rgb(102, 140, 255);
+  position: absolute;
+  font-family: 'Crimson Text', serif;
+  width: 100%;
+  border-radius: 30px;
+}
+.scratch-hidden {
+  position: relative;
+  color: rgb(255, 255, 255);
+  margin-top: 40px;
+  margin-left: 40px;
+  width: 320px;
+  text-align: center;
+  font-size: 1.1em;
+}
+.design-info-maintain {
+  height: 250px;
+  margin: -700px 0px 0px 0px;
+  background-color: rgb(102, 140, 255);
+  position: absolute;
+  font-family: 'Crimson Text', serif;
+  width: 100%;
+  border-radius: 30px;
+}
+.template-hidden {
+  position: relative;
+  color: rgb(255, 255, 255);
+  margin-top: 40px;
+  margin-left: 40px;
+  width: 320px;
+  text-align: center;
+  font-size: 1.1em;
+=======
+    height: 250px;
+    margin-top: 50px;
+    background-color: rgb(102, 140, 255);
+    position: absolute;
+    font-family: 'Crimson Text', serif;
+}
+.design-info-scratch {
+    height: 250px;
+    margin-top: 50px;
+    background-color: rgb(51, 51, 51);
+    position: absolute;
+>>>>>>> origin/master
+}
+#hidden-scratch-photo-center {
+    width: 36%;
+    display: inline;
+    margin-right: 0px;
+    margin-left: 360px;
+    margin-top: 3px;
+    position: relative;
+    border-width: 1px;
+    border-style: solid;
+    border-color: grey;
+    border-radius: 0px;
+  }
+
 /* About Styles */
 
+#about-header {
+    margin-top: 100px;
+    margin-bottom: 80px;
+    text-align: center;
+    font-size: 2em;
+    color: rgb(51, 51, 51);
+}
+<<<<<<< HEAD
+#work-header {
+    margin-top: 100px;
+    margin-bottom: -30px;
+    text-align: center;
+    font-size: 2em;
+    color: rgb(51, 51, 51);
+}
 #tyler-about-pic {
-    width: 100%;
+    width: 75%;
     display: inline;
-    margin-left: 0px;
+    margin-left: 12%;
+    margin-top: 10%;
+=======
+#tyler-about-pic {
+    width: 75%;
+    display: inline;
+    margin-left: 50px;
     margin-top: 45px;
+>>>>>>> origin/master
     border-radius: 100px;
 }
 .about-paragraph {
     text-align: center;
     display: inline;
     float: right;
-    margin-top: 100px;
-    margin-right: 0px;
+    margin-top: 75px;
+    margin: 30px 20px 75px 20px;
     font-size: 1.1em;
-    line-height: 1.5em;
+    line-height: 1.4em;
+}
+/* Contact Styles */
+#contact-header {
+    margin-top: 100px;
+    margin-bottom: 80px;
+    text-align: center;
+    font-size: 2em;
+    color: rgb(51, 51, 51);
+}
+.contact-paragraph {
+      text-align: center;
+      display: block;
+      margin-top: 0px;
+      padding-bottom: 25px;
+      font-size: 1.1em;
+      line-height: 1.2em;
+  }
+
+/* Footer Styles */
+#foot {
+  color: rgb(51, 51, 51);
+  background-color: rgb(102, 179, 255);
+  height: 70px;
+  text-align: center;
+  padding-top: 35px;
+  margin-top: 30px;
+}
+#foot a {
+    text-align: center;
+    color: rgb(51, 51, 51);
+    float: none;
+    padding-right: 0px;
+<<<<<<< HEAD
+}
+.design-option-link {
+  width: 100%;
+}
+.design-labels {
+  text-align: center;
+}
+.more-info-button {
+  color: white;
+  margin: -10px 155px;
+  padding: 0px 10px;
+  border: 2px solid #fff;
+  border-radius: 5px;
+}
+.more-info-button:hover {
+  color: #333;
+  background-color: rgb(230, 242, 255);
+  margin: -10px 155px;
+  padding: 0px 10px;
+  border: 2px solid rgb(230, 242, 255);
+=======
+>>>>>>> origin/master
 }

@@ -1,3 +1,74 @@
+@media screen and (min-width: 410px) {
+#show-nav {
+  margin: 10px 0px;
+}
+/*.block {
+  width: 90%;
+  height: 100%;
+  padding-bottom: 0px;
+  border-radius: 5px;
+}
+}*/
+@media screen and (min-width: 450px) {
+
+  #template-block,
+  #wordpress-block,
+  #custom-work-block {
+      width: 90%;
+      height: 15em;
+      margin-left: 10%;
+      margin-right: 10%;
+}
+.design-option-link {
+  width: 91%;
+}
+#tyler-about-pic {
+  width: 75%;
+  display: inline;
+  /*margin-left: 10%;
+  margin-top: 10%;*/
+  border-radius: 100px;
+}
+}
+@media screen and (min-width: 528px) {
+
+  #template-block,
+  #wordpress-block,
+  #custom-work-block {
+      width: 90%;
+      height: 15em;
+      margin-left: 10%;
+      margin-right: 10%;
+}
+.design-option-link {
+  width: 91%;
+}
+@media screen and (min-width: 650px) {
+
+  #template-block {
+    width: 45%;
+    height: 15em;
+    margin-right: -50px;
+    display: inline;
+  }
+  #wordpress-block {
+    width: 45%;
+    height: 15em;
+    display: inline;
+  }
+  #custom-work-block {
+      width: 45%;
+      height: 15em;
+      display: inline;
+}
+.tyler-about-pic {
+  width: 50%;
+  display: inline;
+  margin-left: 12%;
+  margin-top: 10%;
+  border-radius: 100px;
+}
+}
 @media screen and (min-width: 1200px) {
   .logoReal {
       height: 8em;
@@ -103,20 +174,6 @@
       font-size: 1.1em;
       line-height: 1em;
     }
-    #foot {
-      color: rgb(51, 51, 51);
-      background-color: rgb(102, 179, 255);
-      height: 70px;
-      text-align: center;
-      padding-top: 35px;
-      margin-top: 30px;
-  }
-  #foot a {
-      text-align: center;
-      color: rgb(51, 51, 51);
-      float: none;
-      padding-right: 0px;
-  }
   .design-labels-word {
       float: inherit;
       display: inline;
@@ -182,7 +239,7 @@
       border-color: grey;
       border-radius: 0px;
     }
-    .main-navigation {
+    /*.main-navigation {
       display: inline;
       float: right;
       position: relative;
@@ -193,9 +250,12 @@
     text-decoration: none;
     list-style: none;
     float: left;
-  }
+  }*/
   .design-option-link {
     float: none;
     padding-right: 0px;
   }
+}
+#show-nav {
+  /*display: none;*/
 }
