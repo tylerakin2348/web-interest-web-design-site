@@ -1,30 +1,5 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-  <meta charset="utf-8" name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Tyler Akin Web Design</title>
-  <link rel="stylesheet" href="wp-content/themes/interest/assets/css/normalize.css">
-  <link href="wp-content/themes/interest/style.css" rel="stylesheet">
-  <!-- <link rel="stylesheet" href="assets/css/responsfive.css">
-  <link rel="stylesheet" href="assets/css/responsiveagain.css"> -->
-  <link href="https://fonts.googleapis.com/css?family=Roboto+Condensed:400,300,700" rel="stylesheet" type="text/css">
-  <link href="https://fonts.googleapis.com/css?family=Crimson+Text:400,400italic,600,700" rel="stylesheet" type="text/css">
-</head>
+<?php include 'header.php'; ?>
 
-<body>
-  <header id="top-header">
-    <a href="index.php">
-      <img class="logoReal" src="wp-content/themes/interest/assets/img/Web%20Site%20Design%20Logo.png">
-    </a>
-    <a href="#" id="show-nav">Show Navigation</a>
-    <nav class="main-navigation">
-      <ul class="menu">
-        <li><a href="design-options.php">Design Options</a></li>
-        <li><a href="#about-header">About</a></li>
-        <li><a href="#contact-header">Contact</a></li>
-      </ul>
-    </nav>
-  </header>
   <div id="blocks">
     <div>
       <a class="design-option-link" href="#"><img src="wp-content/themes/interest/assets/img/computerphoto.jpg" id="template-block" class="block" alt="Template Design" <="" img=""></a>
@@ -83,14 +58,5 @@
       <a href="mailto:takin963@students.sbts.edu?Subject=Website%20Info" target="_top">Send Email</a>
     </p>
   </div>
-  </div>
-  <footer id="foot">
-    <p>© Tyler Akin 2016</p>
-    <a href="index.html" class="to-top">Back to Top</a>
-  </footer>
-  <script src="wp-content/themes/interest/assets/js/jquery.js"></script>
-  <script src="wp-content/themes/interest/assets/js/main.js"></script>
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/1.19.0/TweenLite.min.js"></script>
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/1.19.0/TweenMax.min.js"></script>
-</body>
-</html>
+  
+  <?php include 'footer.php'; ?>
