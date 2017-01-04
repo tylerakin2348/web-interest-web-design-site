@@ -1,309 +1,312 @@
-/* General Styles */
+/******************************************
+General Styles
+******************************************/
+
 body {
   font-family: 'Roboto Condensed', sans-serif;
-  background-color: rgb(230, 242, 255);
+  /*background-color: rgb(230, 242, 255);*/
   overflow-x: hidden;
 }
 img {
   border-style: none;
+  max-width: 100%;
 }
 li {
+  font-size: 1.3em;
   text-decoration: none;
   list-style: none;
   float: left;
 }
 
-/* Heading Styles */
+/*ul {
+  margin: 0 auto;
+  -webkit-padding-start: 0;
+  -webkit-margin-before: 0em;
+}*/
+
+a {
+  color: rgb(255, 102, 102);
+  display: inline;
+  padding-right: 20px;
+  text-decoration: none;
+}
+a:hover {
+  color: rgb(255, 12, 12);
+}
+h2 {
+  display: block;
+  font-size: 1.5em;
+}
+
+/******************************************
+Heading Styles
+******************************************/
+
 .logoReal {
-    height: 7em;
-    width: 300px;
-    margin-top: 11px;
-    margin-left: 8px;
+  height: 7em;
+  margin-top: -2px;
+  margin-left: 10px;
+  width: 300px;
 }
 #top-header {
-    padding-bottom: 0px;
-    height: 110px;
-    display: block;
-    position: absolute;
-    clear: both;
-    width: 100%;
-    background-color: rgb(255, 102, 102);
-    z-index: 100;
-    margin: -28px 0px 100px;
+  background-color: rgb(255, 102, 102);
+  display: block;
+  height: 90px;
+  padding-bottom: 0px;
+  position: absolute;
+  top: 0;
+  width: 100%;
 }
 .main-navigation {
-  display: inline;
-  float: right;
-  position: relative;
   color: rgb(51, 51, 51);
-<<<<<<< HEAD
-  padding: 0px 10px;
-  margin-top: -20px;
-=======
-  padding: 31px 10px;
->>>>>>> origin/master
+  list-style: none;
+  margin-top: -15px;
+  min-height: 20em;
+  position: absolute;
+  right: 0;
+  top: 7em;
 }
 .menu li a {
-    float: left;
-    display: inline;
-    margin-right: 10px;
-    color: rgb(51, 51, 51);
-    font-size: 1em;
-    padding: 10px;
-    list-style: none;
+  float: left;
+  display: inline;
+  margin-right: 10px;
+  color: rgb(51, 51, 51);
+  font-size: 1em;
+  padding: 10px;
+  list-style: none;
 }
 .menu li a:hover {
   text-decoration: underline;
 }
-a {
-    float: left;
-    display: inline;
-    padding-right: 20px;
-    text-decoration: none;
-}
 #show-nav {
-<<<<<<< HEAD
-  background-color: rgb(255, 102, 102);
   color: #333;
-  width: 20%;
-  padding: 30px 0px 30px 0px;
-  margin: -117px 0px;
+  max-width: 70px;
+  padding: 30px 10px 20px 10px;
   text-align: center;
-  /* margin: 0px 10px 0px 10px; */
-  border-radius: 0px;
-  /*border-top: 2px solid #333;
-  border-bottom: 2px solid #333;*/
-  float: right;
+  margin: 0px 0px 0px 10px;
+  position: absolute;
+  right: 0;
+  top: 0;
 }
 #show-nav:hover {
   background-color: rgb(230, 242, 255);
   border: 2px solid rgb(230, 242, 255);
 }
-=======
-  background-color: rgb(230, 242, 255);
-  color: #333;
-  padding: 10px;
-  border: 1px solid #333;
-  text-align: center;
-  margin-left: 150px;
-}
 
->>>>>>> origin/master
-/* Design Style Block*/
-/*.block {
-  height: 100%;
-  padding-bottom: 0px;
-  border-radius: 5px;
-}*/
+/******************************************
+Design Options Blocks
+******************************************/
+
+#blocks {
+  margin-top: 10em;
+}
+#blocks {
+  display: flex;
+  flex-wrap: wrap;
+  margin-top: 10em;
+  position: relative;
+}
+#blocks div {
+  flex-direction: row;
+  justify-content: space-around;
+  margin: 0 auto;
+  margin-top: 1em;
+  max-width: 426px;
+  position: relative;
+}
+#blocks div div {
+  margin: 0 auto;
+  margin-top: -19.4em;
+  max-width: 426px;
+  position: relative;
+}
+@media screen and (min-width: 750px) {
+  #blocks div {
+    max-width: 50%;
+  }
+  #blocks div div {
+    max-width: 100%;
+  }
+}
+@media screen and (min-width: 1050px) {
+  #blocks div {
+    max-width: 33.3%;
+  }
+  #blocks div div {
+    max-width: 100%;
+  }
+}
+#blocks div img {
+  height: 16em;
+}
 #template-block {
-    width: 90%;
-    height: 15em;
-    margin-left: 5%;
-    margin-right: 5%;
-    margin-top: 150px;
-    border-radius: 100px;
+  width: 100%;
 }
 #wordpress-block {
-    width: 100%;
-    height: 15em;
-    margin-left: 5%;
-    margin-right: 5%;
-    margin-top: 50px;
-    border-radius: 100px;
+  width: 100%;
 }
 #custom-work-block {
   width: 100%;
-  height: 15em;
-  margin-left: 5%;
-  margin-right: 5%;
-  margin-top: 50px;
-  border-radius: 100px;
 }
-#arrow-click {
-    width: 400px;
-    margin-top: 150px;
-    margin-left: 0px;
-}
-/* Hidden Design Block Styles */
-#hidden-wordpress-photo {
-<<<<<<< HEAD
-    width: 100%;
-    height: 250px;
-    display: inline;
-    margin-right: 355px;
-    margin-top: 150px;
-=======
-    width: 36%;
-    height: 250px;
-    display: inline;
-    margin-right: 355px;
-    margin-top: 0px;
->>>>>>> origin/master
-    position: relative;
-    border-radius: 0px;
-}
-#hidden-wordpress-photo-church {
-<<<<<<< HEAD
-    width: 100%;
-    height: 250px;
-    display: inline;
-    margin-right: -10px;
-    margin-top: 50px;
-=======
-    width: 36%;
-    height: 250px;
-    display: inline;
-    margin-right: -10px;
-    margin-top: 0px;
->>>>>>> origin/master
-    position: relative;
-    border-radius: 0px;
-}
-.wordpress-hidden {
-    position: relative;
-    color: rgb(255, 255, 255);
-<<<<<<< HEAD
-    margin-top: 37px;
-    margin-left: 40px;
-    width: 320px;
-=======
-    margin-top: -229px;
-    margin-left: 495px;
-    width: 290px;
->>>>>>> origin/master
-    text-align: center;
-    font-size: 1.1em;
-}
-.design-info-word {
-<<<<<<< HEAD
-  height: 250px;
-  margin: -750px 0px 0px 0px;
-  background-color: rgb(102, 140, 255);
-  position: absolute;
-  font-family: 'Crimson Text', serif;
-  width: 100%;
-  border-radius: 30px;
-}
-.design-info-scratch {
-  height: 250px;
-  margin: -550px 0px 0px 0px;
-  background-color: rgb(102, 140, 255);
-  position: absolute;
-  font-family: 'Crimson Text', serif;
-  width: 100%;
-  border-radius: 30px;
-}
-.scratch-hidden {
-  position: relative;
+
+/******************************************
+Hidden Design Block Styles
+******************************************/
+
+#wordpress-hidden, #scratch-hidden, #template-hidden {
   color: rgb(255, 255, 255);
-  margin-top: 40px;
-  margin-left: 40px;
-  width: 320px;
-  text-align: center;
   font-size: 1.1em;
+  margin: 0 auto;
+  padding-top: 2em;
+  text-align: center;
+  width: 320px;
 }
-.design-info-maintain {
-  height: 250px;
-  margin: -700px 0px 0px 0px;
+.design-info-maintain, .design-info-word, .design-info-scratch {
+  height: 16em;
   background-color: rgb(102, 140, 255);
   position: absolute;
   font-family: 'Crimson Text', serif;
-  width: 100%;
-  border-radius: 30px;
-}
-.template-hidden {
-  position: relative;
-  color: rgb(255, 255, 255);
-  margin-top: 40px;
-  margin-left: 40px;
-  width: 320px;
-  text-align: center;
-  font-size: 1.1em;
-=======
-    height: 250px;
-    margin-top: 50px;
-    background-color: rgb(102, 140, 255);
-    position: absolute;
-    font-family: 'Crimson Text', serif;
-}
-.design-info-scratch {
-    height: 250px;
-    margin-top: 50px;
-    background-color: rgb(51, 51, 51);
-    position: absolute;
->>>>>>> origin/master
+  opacity: .9;
 }
 #hidden-scratch-photo-center {
-    width: 36%;
-    display: inline;
-    margin-right: 0px;
-    margin-left: 360px;
-    margin-top: 3px;
-    position: relative;
-    border-width: 1px;
-    border-style: solid;
-    border-color: grey;
-    border-radius: 0px;
-  }
+  width: 36%;
+  display: inline;
+  margin-right: 0px;
+  margin-left: 360px;
+  margin-top: 3px;
+  position: relative;
+  border-width: 1px;
+  border-style: solid;
+  border-color: grey;
+  border-radius: 0px;
+}
 
-/* About Styles */
+/* Info Buttons Hide/Show */
 
+.hide-info-button-scratch, .hide-info-button-template, .hide-info-button-word {
+  bottom: 1em;
+  color: white;
+  right: 5em;
+  padding: 11px 16px;
+  border: 2px solid #fff;
+  border-radius: 5px;
+  position: absolute;
+}
+.more-info-button-template, .more-info-button-scratch, .more-info-button-word {
+  bottom: 1em;
+  color: white;
+  left: 5em;
+  padding: 11px 10px;
+  border: 2px solid #fff;
+  border-radius: 5px;
+  position: absolute;
+}
+.more-info-button-template:hover, .more-info-button-scratch:hover, .more-info-button-word:hover {
+  color: #333;
+  background-color: rgb(230, 242, 255);
+  padding: 11px 10px;
+  border: 2px solid rgb(230, 242, 255);
+}
+.hide-info-button-template:hover, .hide-info-button-scratch:hover, .hide-info-button-word:hover {
+  color: #333;
+  background-color: rgb(230, 242, 255);
+  padding: 11px 16px;
+  border: 2px solid rgb(230, 242, 255);
+}
+
+/******************************************
+About Styles
+******************************************/
+
+.about {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+}
 #about-header {
-    margin-top: 100px;
-    margin-bottom: 80px;
-    text-align: center;
-    font-size: 2em;
-    color: rgb(51, 51, 51);
-}
-<<<<<<< HEAD
-#work-header {
-    margin-top: 100px;
-    margin-bottom: -30px;
-    text-align: center;
-    font-size: 2em;
-    color: rgb(51, 51, 51);
+  margin-top: 3em;
+  margin-bottom: 80px;
+  text-align: center;
+  font-size: 2em;
+  color: rgb(51, 51, 51);
+  clear: both;
 }
 #tyler-about-pic {
-    width: 75%;
-    display: inline;
-    margin-left: 12%;
-    margin-top: 10%;
-=======
-#tyler-about-pic {
-    width: 75%;
-    display: inline;
-    margin-left: 50px;
-    margin-top: 45px;
->>>>>>> origin/master
-    border-radius: 100px;
+  border-radius: 100px;
+  flex-direction: row;
+  height: 40%;
+  margin: 0 auto;
+  width: 350px;
 }
 .about-paragraph {
-    text-align: center;
-    display: inline;
-    float: right;
-    margin-top: 75px;
-    margin: 30px 20px 75px 20px;
-    font-size: 1.1em;
-    line-height: 1.4em;
+  display: inline;
+  flex-direction: row;
+  font-size: 1.1em;
+  line-height: 1.4em;
+  margin: 0 auto;
+  margin-top: 50px;
+  max-width: 500px;
+  text-align: center;
 }
-/* Contact Styles */
+@media screen and (min-width: 750px) {
+  .about-paragraph {
+    margin-top: 5em;
+    text-align: left;
+  }
+}
+@media screen and (min-width: 850px) {
+  .about-paragraph {
+    margin-top: 1em;
+    max-width: 40%;
+    text-align: left;
+  }
+}
+
+/******************************************
+Contact Styles
+******************************************/
+
+.contact {
+  display: block;
+}
 #contact-header {
-    margin-top: 100px;
-    margin-bottom: 80px;
-    text-align: center;
-    font-size: 2em;
-    color: rgb(51, 51, 51);
+  margin-top: 100px;
+  margin-bottom: 80px;
+  text-align: center;
+  font-size: 2em;
+  color: rgb(51, 51, 51);
 }
 .contact-paragraph {
-      text-align: center;
-      display: block;
-      margin-top: 0px;
-      padding-bottom: 25px;
-      font-size: 1.1em;
-      line-height: 1.2em;
-  }
+  text-align: center;
+  display: block;
+  margin: 0px 1% 2em 1%;
+  padding-bottom: 25px;
+  font-size: 1.1em;
+  line-height: 1.2em;
+}
+.contact-info {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+}
+.contact-paragraph a {
+  background-color: #333;
+  box-shadow: 3px 0px 2px 1px rgba(0, 0, 0, 0.5);
+  display: block;
+  padding: 1em;
+  margin: 0 auto;
+  width: 10em;
+}
+.contact-paragraph a:hover {
+  background-color: rgb(255, 102, 102);
+  box-shadow: 1px 1px 1px 1px rgba(0, 0, 0, 0.2);
+  color: #333;
+}
 
-/* Footer Styles */
+/******************************************
+Footer Styles
+******************************************/
+
 #foot {
   color: rgb(51, 51, 51);
   background-color: rgb(102, 179, 255);
@@ -313,31 +316,29 @@ a {
   margin-top: 30px;
 }
 #foot a {
-    text-align: center;
-    color: rgb(51, 51, 51);
-    float: none;
-    padding-right: 0px;
-<<<<<<< HEAD
-}
-.design-option-link {
-  width: 100%;
+  text-align: center;
+  color: rgb(51, 51, 51);
+  float: none;
+  padding-right: 0px;
 }
 .design-labels {
   text-align: center;
 }
-.more-info-button {
-  color: white;
-  margin: -10px 155px;
-  padding: 0px 10px;
-  border: 2px solid #fff;
-  border-radius: 5px;
+
+/******************************************
+Design Option Page Styles
+******************************************/
+
+.design-paragraph-headers {
+  font-size: 1.3em;
+  margin: 2em auto 0em auto;
+  text-align: center;
+  width: 90%;
 }
-.more-info-button:hover {
-  color: #333;
-  background-color: rgb(230, 242, 255);
-  margin: -10px 155px;
-  padding: 0px 10px;
-  border: 2px solid rgb(230, 242, 255);
-=======
->>>>>>> origin/master
+.design-paragraphs {
+  font-size: 1.2em;
+  margin: .5em auto 0em auto;
+  text-align: justify;
+  text-indent: -5px;
+  width: 90%;
 }

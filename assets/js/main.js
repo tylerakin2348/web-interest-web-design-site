@@ -9,6 +9,7 @@ $("#wordpress-block").click(function() {
 }
 });
 
+
 $(".design-info-scratch").hide();
 $("#custom-work-block").click(function() {
   if ( $(".design-info-scratch").is(":hidden") ) {
@@ -31,6 +32,7 @@ $(".design-option-link").click(function() {
   return false;
 });
 
+
 $(".main-navigation").hide();
 
 // This controls smaller screen's show-nav function
@@ -42,7 +44,39 @@ $("#show-nav").click(function() {
 }
 });
 
+// This hides the design option info that slides up in blue.
 
-// $("#show-nav").click(function(){
-//    $(this).css("background-color", "rgb(230, 242, 255)");
+//Template info
+$(".hide-info-button-template").click(function() {
+  if ( $(".design-info-maintain").is(":hidden") ) {
+  $(".design-info-maintain").show();
+} else {
+  $(".design-info-maintain").hide();
+}
+});
+// Wordpress info
+$(".hide-info-button-word").click(function() {
+  if ( $(".design-info-word").is(":hidden") ) {
+  $(".design-info-word").show();
+} else {
+  $(".design-info-word").hide();
+}
+});
+//Scratch info
+$(".hide-info-button-scratch").click(function() {
+  // return false;
+  if ( $(".design-info-scratch").is(":hidden") ) {
+  $(".design-info-scratch").show();
+} else {
+  $(".design-info-scratch").hide();
+}
+});
+
+// Greensocks Button Animation
+
+
+// TweenLite.to(div, 1, {x:100});
+//
+//   $(".template-hidden").hide(); // text of blue section
+//   $(".design-info-maintain").hide(); // blue overlay
 // });

@@ -1,171 +1,85 @@
-@media screen and (min-width: 410px) {
-#show-nav {
-  margin: 10px 0px;
-}
-/*.block {
-  width: 90%;
-  height: 100%;
-  padding-bottom: 0px;
-  border-radius: 5px;
-}
-}*/
-@media screen and (min-width: 450px) {
 
-  #template-block,
-  #wordpress-block,
-  #custom-work-block {
-      width: 90%;
-      height: 15em;
-      margin-left: 10%;
-      margin-right: 10%;
-}
-.design-option-link {
-  width: 91%;
-}
-#tyler-about-pic {
-  width: 75%;
-  display: inline;
-  /*margin-left: 10%;
-  margin-top: 10%;*/
-  border-radius: 100px;
-}
-}
-@media screen and (min-width: 528px) {
+@media screen and (min-width: 620px) {
 
-  #template-block,
-  #wordpress-block,
-  #custom-work-block {
-      width: 90%;
-      height: 15em;
-      margin-left: 10%;
-      margin-right: 10%;
+  #show-nav {
+    background-color: rgb(255, 102, 102);
+    color: #333;
+    width: 14%;
+    padding: 30px 0px 21px 0px;
+    text-align: center;
+    border-radius: 0px;
+    float: right;
+    margin: -1px 0px;
 }
-.design-option-link {
-  width: 91%;
-}
-@media screen and (min-width: 650px) {
-
-  #template-block {
-    width: 45%;
-    height: 15em;
-    margin-right: -50px;
+.about-paragraph {
+    text-align: center;
     display: inline;
-  }
-  #wordpress-block {
-    width: 45%;
-    height: 15em;
-    display: inline;
-  }
-  #custom-work-block {
-      width: 45%;
-      height: 15em;
-      display: inline;
-}
-.tyler-about-pic {
-  width: 50%;
-  display: inline;
-  margin-left: 12%;
-  margin-top: 10%;
-  border-radius: 100px;
+    margin-top: 50px;
+    font-size: 1.1em;
+    line-height: 1.5em;
 }
 }
-@media screen and (min-width: 1200px) {
-  .logoReal {
-      height: 8em;
-      margin-top: 11px;
-      margin-left: 10px;
-  }
-  /*#top-header {
-      padding-bottom: 0px;
-      height: 110px;
-      display: block;
-      position: fixed;
-      clear: both;
-      width: 100%;
-      background-color: rgb(255, 102, 102);
-      z-index: 100;
-      margin: -28px 0px 100px;
-  }
-  .menu li a {
-      float: left;
-      margin-right: 20px;
-      display: inline;
-      color: rgb(51, 51, 51);
-      font-size: 1.3em;
-      padding: 10px;
-      list-style: none;
-  }
-  .menu li a:hover {
-    text-decoration: underline;
-  }
-  a {
-      float: left;
-      display: inline;
-      padding-right: 20px;
-      text-decoration: none;
-  }*/
-  #template-block {
-      width: 32%;
-      height: 230px;
-      margin-left: 10px;
-      margin-top: 250px;
-      padding-bottom: 0px;
-      border-radius: 50px;
-  }
-  #wordpress-block {
-      width: 32%;
-      height: 230px;
-      margin-left: 10px;
-      margin-top: 250px;
-      padding-bottom: 0px;
-      border-radius: 50px;
-  }
-  #custom-work-block {
-      width: 29%;
-      height: 230px;
-      margin-left: 10px;
-      padding-bottom: 0px;
-      border-radius: 50px;
-  }
-  #arrow-click {
-      width: 700px;
-      margin-top: 150px;
-      margin-left: 300px;
-  }
-  #about-header {
-      margin-top: 100px;
-      margin-bottom: 80px;
-      text-align: center;
-      font-size: 2em;
-      color: rgb(51, 51, 51);
-  }
-  h2 {
-      display: block;
-      font-size: 1.5em;
-  }
+@media screen and (min-width: 873px) {
   #tyler-about-pic {
       width: 30%;
       display: inline;
       margin-left: 75px;
-      margin-top: 45px;
+      margin-top: 0px;
       border-radius: 100px;
   }
   .about-paragraph {
-      text-align: center;
+      text-align: left;
       display: inline;
       float: right;
-      margin-top: 100px;
-      margin-right: 75px;
+      margin-top: 50px;
+      /*margin-right: 75px;*/
       font-size: 1.1em;
       line-height: 1.5em;
   }
-  #contact-header {
-      margin-top: 100px;
-      margin-bottom: 80px;
-      text-align: center;
-      font-size: 2em;
-      color: rgb(51, 51, 51);
+}
+@media screen and (min-width: 1200px) {
+  #show-nav {
+    background-color: rgb(255, 102, 102);
+    color: #333;
+    width: 7%;
+    padding: 30px 0px 24px 0px;
+    text-align: center;
+    border-radius: 0px;
+    float: right;
+    margin: -2px 0px;
   }
+  /*#top-header {
+      height: 90px;
+      margin: -5px 0px 0px 0px;
+  }*/
+  .design-info-maintain {
+      height: 230px;
+      margin: -18.2em 0% 0% 0.8%;
+      background-color: rgb(102, 140, 255);
+      position: absolute;
+      font-family: 'Crimson Text', serif;
+      width: 32.1%;
+      border-radius: 10%;
+    }
+  .design-info-word {
+    height: 241px;
+    margin: -19.1em 0% 0% 34.4%;
+    background-color: rgb(102, 140, 255);
+    position: absolute;
+    font-family: 'Crimson Text', serif;
+    width: 32.3%;
+    border-radius: 10%;
+    opacity: .9;
+  }
+  /*#custom-work-block {
+    width: 29%;
+    height: 230px;
+    margin-left: 867px;
+    margin-top: -294px;
+    margin-bottom: 34px;
+    /* padding-bottom: 0px; */
+    border-radius: 10%;
+  }*/
   .contact-paragraph {
       text-align: center;
       display: block;
@@ -173,6 +87,23 @@
       padding-bottom: 25px;
       font-size: 1.1em;
       line-height: 1em;
+    }
+    .main-navigation {
+      display: inline;
+      float: right;
+      position: relative;
+      color: rgb(51, 51, 51);
+      padding: 0px 10px;
+      margin-top: 140px;
+    }
+    .menu li a {
+        float: left;
+        display: inline;
+        margin-right: 10px;
+        color: rgb(51, 51, 51);
+        font-size: 1em;
+        padding: 10px;
+        list-style: none;
     }
   .design-labels-word {
       float: inherit;
@@ -214,13 +145,6 @@
       text-align: center;
       font-size: 1.1em;
   }
-  .design-info-word {
-      height: 250px;
-      margin-top: 50px;
-      background-color: rgb(102, 140, 255);
-      position: absolute;
-      font-family: 'Crimson Text', serif;
-  }
   .design-info-scratch {
       height: 250px;
       margin-top: 50px;
@@ -239,23 +163,4 @@
       border-color: grey;
       border-radius: 0px;
     }
-    /*.main-navigation {
-      display: inline;
-      float: right;
-      position: relative;
-      color: rgb(51, 51, 51);
-      padding: 31px 10px;
-  }
-  li {
-    text-decoration: none;
-    list-style: none;
-    float: left;
-  }*/
-  .design-option-link {
-    float: none;
-    padding-right: 0px;
-  }
-}
-#show-nav {
-  /*display: none;*/
 }
