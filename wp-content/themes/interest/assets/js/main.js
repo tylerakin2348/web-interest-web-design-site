@@ -3,6 +3,8 @@
 $(".design-info-word").hide();
 $("#wordpress-block").click(function() {
   if ( $(".design-info-word").is(":hidden") ) {
+    $(".design-info-scratch").hide();
+    $(".design-info-maintain").hide();
   $(".design-info-word").slideDown("slow");
 } else {
   $(".design-info-word").slideUp("fast");
@@ -13,6 +15,8 @@ $("#wordpress-block").click(function() {
 $(".design-info-scratch").hide();
 $("#custom-work-block").click(function() {
   if ( $(".design-info-scratch").is(":hidden") ) {
+    $(".design-info-word").hide();
+    $(".design-info-maintain").hide();
   $(".design-info-scratch").slideDown("slow");
 } else {
   $(".design-info-scratch").slideUp("fast");
@@ -22,6 +26,8 @@ $("#custom-work-block").click(function() {
 $(".design-info-maintain").hide();
 $("#template-block").click(function() {
   if ( $(".design-info-maintain").is(":hidden") ) {
+    $(".design-info-word").hide();
+    $(".design-info-scratch").hide();
   $(".design-info-maintain").slideDown("slow");
 } else {
   $(".design-info-maintain").slideUp("fast");
