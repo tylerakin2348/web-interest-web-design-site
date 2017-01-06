@@ -38,15 +38,28 @@ $(".design-option-link").click(function() {
   return false;
 });
 
+// This controls show-nav functionality
 
 $(".main-navigation").hide();
 
-// This controls smaller screen's show-nav function
+
 $("#show-nav").click(function() {
   if ($(".main-navigation").is(":hidden")) {
     $(".main-navigation").slideDown("slow");
   } else {
     $(".main-navigation").slideUp("fast");
+  }
+});
+
+
+$('#show-nav').click(function() {
+  $(this).toggleClass('active');
+
+  if ($('#show-nav').hasClass('active')) {
+    $(this).text("Hide Navigation");
+
+  } else {
+    $(this).text("Show Navigation");
   }
 });
 
@@ -78,16 +91,6 @@ $(".hide-info-button-scratch").click(function() {
   }
 });
 
-$('#show-nav').click(function() {
-  $(this).toggleClass('active');
-
-  if ($('#show-nav').hasClass('active')) {
-    $(this).text("Hide Navigation");
-
-  } else {
-    $(this).text("Show Navigation");
-  }
-});
 
 
 // Greensocks Button Animation
