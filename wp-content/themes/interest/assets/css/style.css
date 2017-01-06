@@ -95,6 +95,35 @@ Heading Styles
   right: 0;
   top: 0;
 }
+#show-nav:active {
+  /* Safari */
+  -webkit-transform: rotate(-20deg);
+
+  /* Firefox */
+  -moz-transform: rotate(-20deg);
+
+  /* IE */
+  -ms-transform: rotate(-20deg);
+
+  /* Opera */
+  -o-transform: rotate(-20deg);
+}
+#show-nav.active {
+  background-color: rgb(230, 242, 255);
+  border: 2px solid rgb(230, 242, 255);
+  /* Safari */
+  -webkit-transform: rotate(-20deg);
+
+  /* Firefox */
+  -moz-transform: rotate(-20deg);
+
+  /* IE */
+  -ms-transform: rotate(-20deg);
+
+  /* Opera */
+  -o-transform: rotate(-20deg);
+}
+
 #show-nav:hover {
   background-color: rgb(230, 242, 255);
   border: 2px solid rgb(230, 242, 255);
@@ -329,6 +358,9 @@ Footer Styles
   color: rgb(51, 51, 51);
   float: none;
   padding-right: 0px;
+}
+#foot p {
+  padding-bottom: -20px;
 }
 .design-labels {
   text-align: center;
