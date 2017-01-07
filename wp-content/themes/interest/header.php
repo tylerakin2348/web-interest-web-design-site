@@ -12,7 +12,7 @@
 <body>
   <header id="top-header">
     <a href="index.php">
-      <img class="logoReal" src="wp-content/themes/interest/assets/img/Web%20Site%20Design%20Logo.png">
+      <img class="logoReal" src="<?php bloginfo('template_directory');?>/assets/img/Web%20Site%20Design%20Logo.png">
     </a>
     <div class="blog-header">
       <!-- Site Title and Tagline can be inserted here. -->
@@ -20,8 +20,8 @@
     <a href="#" id="show-nav">Show Navigation</a>
     <nav class="main-navigation">
       <ul class="menu">
-        <li><a href="#about-header">About</a></li>
-        <li><a href="#contact-header">Contact</a></li>
+        <li><a href="index.php#about-header">About</a></li>
+        <li><a href="index.php#contact-header">Contact</a></li>
         <?php wp_list_pages( '&title_li=' ); ?>
       </ul>
     </nav>

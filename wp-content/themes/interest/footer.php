@@ -7,8 +7,8 @@
     &copy; <?php echo date("Y"); ?> Tyler Akin
   </p>
 </footer>
-<script src="wp-content/themes/interest/assets/js/jquery.js"></script>
-<script src="wp-content/themes/interest/assets/js/main.js"></script>
+<script src="<?php bloginfo('template_directory');?>/assets/js/jquery.js"></script>
+<script src="<?php bloginfo('template_directory');?>/assets/js/main.js"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/1.19.0/TweenLite.min.js"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/1.19.0/TweenMax.min.js"></script>
 <?php wp_footer(); ?>
