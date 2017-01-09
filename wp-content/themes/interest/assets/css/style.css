@@ -76,18 +76,7 @@ Heading Styles
   right: 0;
   top: 7em;
 }
-.menu li a {
-  float: left;
-  display: inline;
-  margin-right: 10px;
-  color: rgb(51, 51, 51);
-  font-size: 1em;
-  padding: 10px;
-  list-style: none;
-}
-.menu li a:hover {
-  text-decoration: underline;
-}
+
 #show-nav {
   color: #333;
   max-width: 70px;

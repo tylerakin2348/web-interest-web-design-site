@@ -19,11 +19,10 @@
     </div>
     <a href="#" id="show-nav">Show Navigation</a>
     <nav class="main-navigation">
-      <ul class="menu">
-        <li><a href="index.php#about-header">About</a></li>
-        <li><a href="index.php#contact-header">Contact</a></li>
-        <?php wp_list_pages( '&title_li=' ); ?>
-      </ul>
+      <!-- <ul class="menu">
+
+      </ul> -->
+      <?php wp_nav_menu( array( 'theme_location' => 'header-menu' ) ); ?>
     </nav>
 
   </header>
