@@ -64,6 +64,13 @@ Heading Styles
   top: 0;
   width: 100%;
 }
+#top-header img {
+  max-height: 100px;
+  max-width: 307px;
+}
+.blog-title a {
+  color: #333333;
+}
 .main-navigation {
   background-color: rgb(230, 242, 255);
   border: 2px solid rgb(230, 242, 255);
