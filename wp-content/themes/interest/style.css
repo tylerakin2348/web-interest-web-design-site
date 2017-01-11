@@ -79,12 +79,22 @@ Heading Styles
   position: absolute;
   right: 0;
   top: 7em;
-  min-width: 400px;
+  width: 100%;
 }
 .main-navigation a {
   color: #333;
   margin: 0 auto;
   padding: 0 10px;
+}
+@media screen and (min-width: 750px) {
+  .main-navigation {
+    width: 50%;
+  }
+}
+@media screen and (min-width: 1050px) {
+  .main-navigation {
+    width: 33.3%;
+  }
 }
 .main-navigation a:hover {
   text-decoration: underline;
