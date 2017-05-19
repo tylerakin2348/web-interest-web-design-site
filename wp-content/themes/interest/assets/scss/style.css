@@ -138,7 +138,7 @@ Heading Styles
   max-width: 70px;
   padding: 30px 10px 20px;
   text-align: center;
-  transition: background 2.8s ease;
+  transition: background 2.8s, max-width .4s ease;
   margin: 0 0 0 10px;
   position: fixed;
   right: 0;
@@ -156,8 +156,9 @@ Heading Styles
   -o-transform: rotate(-20deg); }
 
 #show-nav.active {
-  background: rgba(255, 102, 102, 0);
+  background: #333;
   border: 2px solid #e6f2ff;
+  color: #fff;
   /* Safari */
   -webkit-transform: rotate(-20deg);
   /* Firefox */
@@ -168,7 +169,7 @@ Heading Styles
   -o-transform: rotate(-20deg); }
 
 #show-nav:hover {
-  border: 2px solid #e6f2ff; }
+  max-width: 80px; }
 
 /******************************************
 Design Options Blocks
