@@ -17,6 +17,7 @@ li {
   text-decoration: none;
   list-style: none;
   float: left;
+  margin-left: 0 auto;
 }
 ul {
   margin: 0 auto;
@@ -36,6 +37,7 @@ h2 {
   display: block;
   font-size: 1.5em;
 }
+
 /******************************************
 Heading Styles
 ******************************************/
@@ -97,30 +99,30 @@ Heading Styles
 }
 .menu-main-menu-container {
   margin: 0 auto;
+  position: absolute;
 }
 .menu-item-has-children {
   position: relative;
   transition: all 1s ease;
 }
 .menu-item-has-children .sub-menu {
-  max-height: 1em;
-  background: #333;
-  display: none;
-  font-size: 0.9rem;
-  line-height: 2;
-  position: absolute;
-  left: 0;
-  width: 100%;
-  top: 2em;
+    max-height: 1em;
+    background: #333;
+    display: none;
+    font-size: 0.9rem;
+    line-height: 2;
+    position: absolute;
+    left: 0;
+    top: 4em;
 }
-.menu-item-has-children .sub-menu li {
-  width: 100%;
-}
+// .menu-item-has-children .sub-menu li {
+//   width: 100%;
+// }
 @media screen and (min-width: 800px) {
-  .menu-item-has-children .sub-menu li {
-    padding-bottom: 0;
-    padding-top: 0;
-  }
+  // .menu-item-has-children .sub-menu li {
+  //   padding-bottom: 0;
+  //   padding-top: 0;
+  // }
 }
 .menu-item-has-children:hover {
   padding-bottom: 9em;
@@ -131,16 +133,18 @@ Heading Styles
   }
 }
 .menu-item-has-children:hover .sub-menu {
-  display: inline;
+  display: flex;
+  justify-content: center;
   max-height: 25em;
+  width: 33.33vw;
   z-index: 1;
 }
 .menu-item-has-children:hover .sub-menu a {
   color: #fff;
-  display: block;
-  margin: 1em auto;
-  text-align: center;
-  padding-right: 0;
+  // display: block;
+  // margin: 1em auto;
+  // text-align: center;
+  // padding-right: 0;
 }
 #show-nav {
   background: inherit;
@@ -302,6 +306,37 @@ Hidden Design Block Styles
   border: 2px solid rgb(230, 242, 255);
 }
 /******************************************
+Page Tempalte Styles
+******************************************/
+.page, .blog-page, .front-page, .full-width-page {
+    // font-size: 0;
+    margin: 0 auto;
+    min-height: 100%;
+    // margin-bottom: -142px;
+    text-align: left;
+    // width: 100%;
+}
+
+.page {
+    width: 90vw;
+}
+
+.blog-page {
+    .container__inner {
+        margin: 0 auto;
+        width: 90vw;
+    }
+}
+
+.front-page {
+
+}
+
+.full-width-page {
+    width: 90vw;
+}
+
+/******************************************
 About Styles
 ******************************************/
 .about {
@@ -390,6 +425,7 @@ Contact Styles
 /******************************************
 Footer Styles
 ******************************************/
+
 #foot {
   color: rgb(250, 250, 250);
   background: #333;

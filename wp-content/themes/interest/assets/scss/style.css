@@ -16,7 +16,8 @@ li {
   font-size: 1.3em;
   text-decoration: none;
   list-style: none;
-  float: left; }
+  float: left;
+  margin-left: 0 auto; }
 
 ul {
   margin: 0 auto;
@@ -90,7 +91,8 @@ Heading Styles
   text-decoration: underline; }
 
 .menu-main-menu-container {
-  margin: 0 auto; }
+  margin: 0 auto;
+  position: absolute; }
 
 .menu-item-has-children {
   position: relative;
@@ -104,16 +106,8 @@ Heading Styles
   line-height: 2;
   position: absolute;
   left: 0;
-  width: 100%;
-  top: 2em; }
+  top: 4em; }
 
-.menu-item-has-children .sub-menu li {
-  width: 100%; }
-
-@media screen and (min-width: 800px) {
-  .menu-item-has-children .sub-menu li {
-    padding-bottom: 0;
-    padding-top: 0; } }
 .menu-item-has-children:hover {
   padding-bottom: 9em; }
 
@@ -121,16 +115,14 @@ Heading Styles
   .menu-item-has-children:hover {
     padding-bottom: 0; } }
 .menu-item-has-children:hover .sub-menu {
-  display: inline;
+  display: flex;
+  justify-content: center;
   max-height: 25em;
+  width: 33.33vw;
   z-index: 1; }
 
 .menu-item-has-children:hover .sub-menu a {
-  color: #fff;
-  display: block;
-  margin: 1em auto;
-  text-align: center;
-  padding-right: 0; }
+  color: #fff; }
 
 #show-nav {
   background: inherit;
@@ -285,6 +277,24 @@ Hidden Design Block Styles
   background: #e6f2ff;
   padding: 11px 16px;
   border: 2px solid #e6f2ff; }
+
+/******************************************
+Page Tempalte Styles
+******************************************/
+.page, .blog-page, .front-page, .full-width-page {
+  margin: 0 auto;
+  min-height: 100%;
+  text-align: left; }
+
+.page {
+  width: 90vw; }
+
+.blog-page .container__inner {
+  margin: 0 auto;
+  width: 90vw; }
+
+.full-width-page {
+  width: 90vw; }
 
 /******************************************
 About Styles
