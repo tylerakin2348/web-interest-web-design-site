@@ -22,7 +22,7 @@
         </hgroup>
     <?php endif; ?>
 
-    <a href="#" id="show-nav">Show Navigation</a>
+    <a href="" onclick="return false;" id="show-nav">Show Navigation</a>
     <nav class="main-navigation">
       <!-- <ul class="menu">
 

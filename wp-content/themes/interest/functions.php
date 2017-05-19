@@ -4,7 +4,7 @@
 
 // Add stylesheets
 function interest_scripts() {
-	wp_enqueue_style( 'style', get_template_directory_uri() . '/style.css' );
+	wp_enqueue_style( 'style', get_template_directory_uri() . '/assets/scss/style.css' );
   wp_enqueue_style( 'normalize', get_template_directory_uri() . '/assets/css/normalize.css' );
 }
 

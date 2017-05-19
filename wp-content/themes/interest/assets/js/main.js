@@ -54,11 +54,14 @@ $("#show-nav").click(function() {
 
 $('#show-nav').click(function() {
   $(this).toggleClass('active');
+  $(this).text("Show Navigation");
+
 
   if ($('#show-nav').hasClass('active')) {
     $(this).text("Hide Navigation");
 
   } else {
+    $('#show-nav').removeClass('active');
     $(this).text("Show Navigation");
   }
 });
