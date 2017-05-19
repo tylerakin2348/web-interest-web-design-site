@@ -4,7 +4,7 @@
     <a href="index.php" class="to-top">Back to Top</a>
       <br />
       <br />
-    &copy; <?php echo date("Y"); ?> Tyler Akin
+    &copy; <?php echo date("Y"); ?> Web Interest Site Design
   </p>
 </footer>
 <script src="<?php bloginfo('template_directory');?>/assets/js/jquery.js"></script>

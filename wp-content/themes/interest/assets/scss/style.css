@@ -9,6 +9,7 @@ body {
 img {
   border-style: none;
   height: auto;
+  max-height: 25rem;
   max-width: 100%; }
 
 li {
@@ -20,7 +21,7 @@ li {
 ul {
   margin: 0 auto;
   -webkit-padding-start: 0;
-  -webkit-margin-before: 0em; }
+  -webkit-margin-before: 0; }
 
 a {
   color: #ff6666;
@@ -42,7 +43,7 @@ Heading Styles
   background-color: #ff6666;
   display: block;
   height: 90px;
-  padding-bottom: 0px;
+  padding-bottom: 0;
   position: absolute;
   top: 0;
   width: 100%; }
@@ -87,13 +88,53 @@ Heading Styles
 .menu-main-menu-container {
   margin: 0 auto; }
 
+.menu-item-has-children {
+  position: relative;
+  transition: all 1s ease; }
+
+.menu-item-has-children .sub-menu {
+  max-height: 1em;
+  background-color: #333;
+  display: none;
+  font-size: 0.9rem;
+  line-height: 2;
+  position: absolute;
+  left: 0;
+  width: 100%;
+  top: 2em; }
+
+.menu-item-has-children .sub-menu li {
+  width: 100%; }
+
+@media screen and (min-width: 800px) {
+  .menu-item-has-children .sub-menu li {
+    padding-bottom: 0;
+    padding-top: 0; } }
+.menu-item-has-children:hover {
+  padding-bottom: 9em; }
+
+@media screen and (min-width: 800px) {
+  .menu-item-has-children:hover {
+    padding-bottom: 0; } }
+.menu-item-has-children:hover .sub-menu {
+  display: inline;
+  max-height: 25em;
+  z-index: 1; }
+
+.menu-item-has-children:hover .sub-menu a {
+  color: #fff;
+  display: block;
+  margin: 1em auto;
+  text-align: center;
+  padding-right: 0; }
+
 #show-nav {
   background-color: inherit;
   color: #333;
   max-width: 70px;
-  padding: 30px 10px 20px 10px;
+  padding: 30px 10px 20px;
   text-align: center;
-  margin: 0px 0px 0px 10px;
+  margin: 0 0 0 10px;
   position: fixed;
   right: 0;
   top: 0;
@@ -131,22 +172,19 @@ Design Options Blocks
 #blocks {
   display: flex;
   flex-wrap: wrap;
-  margin-top: 5em;
   position: relative; }
 
 /* Affects positioning of template blocks */
 #blocks div {
   flex-direction: row;
   justify-content: space-around;
-  margin: 0 auto;
-  margin-top: 1em;
+  margin: 1em auto 0;
   max-width: 426px;
   position: relative; }
 
 /* Affects positioning of hidden overlays */
 #blocks div div {
-  margin: 0 auto;
-  margin-top: -19.4em;
+  margin: -17.25em auto 0;
   max-width: 426px;
   position: relative; }
 
@@ -165,13 +203,17 @@ Design Options Blocks
 #blocks div img {
   height: 16em; }
 
-#template-block, #wordpress-block, #custom-work-block {
+#template-block,
+#wordpress-block,
+#custom-work-block {
   width: 100%; }
 
 /******************************************
 Hidden Design Block Styles
 ******************************************/
-#wordpress-hidden, #scratch-hidden, #template-hidden {
+#wordpress-hidden,
+#scratch-hidden,
+#template-hidden {
   color: white;
   font-size: 1.1em;
   margin: 0 auto;
@@ -179,27 +221,31 @@ Hidden Design Block Styles
   text-align: center;
   width: 320px; }
 
-.design-info-maintain, .design-info-word, .design-info-scratch {
+.design-info-maintain,
+.design-info-word,
+.design-info-scratch {
   height: 16em;
   background-color: #668cff;
   position: absolute;
   font-family: 'Crimson Text', serif;
-  opacity: .9; }
+  opacity: 0.9; }
 
 #hidden-scratch-photo-center {
   width: 36%;
   display: inline;
-  margin-right: 0px;
+  margin-right: 0;
   margin-left: 360px;
   margin-top: 3px;
   position: relative;
   border-width: 1px;
   border-style: solid;
   border-color: grey;
-  border-radius: 0px; }
+  border-radius: 0; }
 
 /* Info Buttons Hide/Show */
-.hide-info-button-scratch, .hide-info-button-template, .hide-info-button-word {
+.hide-info-button-scratch,
+.hide-info-button-template,
+.hide-info-button-word {
   bottom: 1em;
   color: white;
   right: 5em;
@@ -208,7 +254,9 @@ Hidden Design Block Styles
   border-radius: 5px;
   position: absolute; }
 
-.more-info-button-template, .more-info-button-scratch, .more-info-button-word {
+.more-info-button-template,
+.more-info-button-scratch,
+.more-info-button-word {
   bottom: 1em;
   color: white;
   left: 5em;
@@ -217,13 +265,17 @@ Hidden Design Block Styles
   border-radius: 5px;
   position: absolute; }
 
-.more-info-button-template:hover, .more-info-button-scratch:hover, .more-info-button-word:hover {
+.more-info-button-template:hover,
+.more-info-button-scratch:hover,
+.more-info-button-word:hover {
   color: #333;
   background-color: #e6f2ff;
   padding: 11px 10px;
   border: 2px solid #e6f2ff; }
 
-.hide-info-button-template:hover, .hide-info-button-scratch:hover, .hide-info-button-word:hover {
+.hide-info-button-template:hover,
+.hide-info-button-scratch:hover,
+.hide-info-button-word:hover {
   color: #333;
   background-color: #e6f2ff;
   padding: 11px 16px;
@@ -239,7 +291,7 @@ About Styles
   justify-content: space-between; }
 
 .about p {
-  margin: 3em auto 0em auto; }
+  margin: 3em auto 0; }
 
 #about-header {
   margin-top: 3em;
@@ -259,8 +311,7 @@ About Styles
   display: inline;
   font-size: 1.1em;
   line-height: 1.4em;
-  margin: 0 auto;
-  margin-top: 50px;
+  margin: 50px auto 0;
   max-width: 500px;
   text-align: center; }
 
@@ -289,7 +340,7 @@ Contact Styles
 .contact-paragraph {
   text-align: center;
   display: block;
-  margin: 0px 1% 2em 1%;
+  margin: 0 1% 2em;
   padding-bottom: 25px;
   font-size: 1.1em;
   line-height: 1.2em; }
@@ -301,7 +352,7 @@ Contact Styles
 
 .contact-paragraph a {
   background-color: #333;
-  box-shadow: 3px 0px 2px 1px rgba(0, 0, 0, 0.5);
+  box-shadow: 3px 0 2px 1px rgba(0, 0, 0, 0.5);
   display: block;
   padding: 1em;
   margin: 0 auto;
@@ -327,7 +378,7 @@ Footer Styles
   text-align: center;
   color: #333333;
   float: none;
-  padding-right: 0px; }
+  padding-right: 0; }
 
 #foot p {
   padding-bottom: -20px; }
@@ -340,23 +391,22 @@ Design Option Page Styles
 ******************************************/
 .design-paragraph-headers {
   font-size: 1.3em;
-  margin: 2em auto 0em auto;
+  margin: 2em auto 0;
   text-align: center;
   width: 90%; }
 
 .design-paragraphs {
-  font-size: 1.2em;
-  margin: .5em auto 0em auto;
+  line-height: 1.5em;
+  margin: 0.5em auto 0;
   text-align: justify;
-  text-indent: -5px;
+  text-indent: 25px;
   width: 90%; }
 
 /******************************************
 Blog Styles
 ******************************************/
 .blog-post {
-  margin: 0 auto;
-  margin-bottom: 2em;
+  margin: 0 auto 2em;
   width: 95%; }
 
 /*# sourceMappingURL=style.css.map */
