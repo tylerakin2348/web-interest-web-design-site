@@ -46,8 +46,10 @@ $(".main-navigation").hide();
 $("#show-nav").click(function() {
   if ($(".main-navigation").is(":hidden")) {
     $(".main-navigation").slideDown("slow");
+    $(".main-navigation").addClass("add-color");
   } else {
     $(".main-navigation").slideUp("fast");
+    $(".main-navigation").removeClass("add-color");
   }
 });
 

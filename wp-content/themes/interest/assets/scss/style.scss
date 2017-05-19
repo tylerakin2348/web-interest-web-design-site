@@ -3,7 +3,7 @@ General Styles
 ******************************************/
 body {
   font-family: 'Roboto Condensed', sans-serif;
-  /*background-color: rgb(230, 242, 255);*/
+  /*background: rgb(230, 242, 255);*/
   overflow-x: hidden;
 }
 img {
@@ -40,7 +40,7 @@ h2 {
 Heading Styles
 ******************************************/
 #top-header {
-  background-color: rgb(255, 102, 102);
+  background: rgb(255, 102, 102);
   display: block;
   height: 90px;
   padding-bottom: 0;
@@ -56,7 +56,7 @@ Heading Styles
   color: #333333;
 }
 .main-navigation {
-    background-color: rgb(230, 242, 255);
+    background: rgba(255, 102, 102, 0);
     border: 2px solid rgb(230, 242, 255);
     color: rgb(51, 51, 51);
     display: flex;
@@ -68,9 +68,15 @@ Heading Styles
     position: fixed;
     right: 0;
     top: 7em;
+    transition: background 3.2s ease;
     width: 100%;
     z-index: 99;
 }
+.add-color {
+    background: rgba(255, 102, 102, 1);
+    // transition: all 3.2s ease;
+}
+
 .main-navigation a {
     color: #333;
     margin: 0 auto;
@@ -98,7 +104,7 @@ Heading Styles
 }
 .menu-item-has-children .sub-menu {
   max-height: 1em;
-  background-color: #333;
+  background: #333;
   display: none;
   font-size: 0.9rem;
   line-height: 2;
@@ -137,11 +143,12 @@ Heading Styles
   padding-right: 0;
 }
 #show-nav {
-  background-color: inherit;
+  background: inherit;
   color: #333;
   max-width: 70px;
   padding: 30px 10px 20px;
   text-align: center;
+  transition: background 2.8s ease;
   margin: 0 0 0 10px;
   position: fixed;
   right: 0;
@@ -159,7 +166,7 @@ Heading Styles
   -o-transform: rotate(-20deg);
 }
 #show-nav.active {
-  background-color: rgb(230, 242, 255);
+    background: rgba(255, 102, 102, 0);
   border: 2px solid rgb(230, 242, 255);
   /* Safari */
   -webkit-transform: rotate(-20deg);
@@ -171,7 +178,6 @@ Heading Styles
   -o-transform: rotate(-20deg);
 }
 #show-nav:hover {
-  background-color: rgb(230, 242, 255);
   border: 2px solid rgb(230, 242, 255);
 }
 /******************************************
@@ -238,7 +244,7 @@ Hidden Design Block Styles
 .design-info-word,
 .design-info-scratch {
   height: 16em;
-  background-color: rgb(102, 140, 255);
+  background: rgb(102, 140, 255);
   position: absolute;
   font-family: 'Crimson Text', serif;
   opacity: 0.9;
@@ -282,7 +288,7 @@ Hidden Design Block Styles
 .more-info-button-scratch:hover,
 .more-info-button-word:hover {
   color: #333;
-  background-color: rgb(230, 242, 255);
+  background: rgb(230, 242, 255);
   padding: 11px 10px;
   border: 2px solid rgb(230, 242, 255);
 }
@@ -290,7 +296,7 @@ Hidden Design Block Styles
 .hide-info-button-scratch:hover,
 .hide-info-button-word:hover {
   color: #333;
-  background-color: rgb(230, 242, 255);
+  background: rgb(230, 242, 255);
   padding: 11px 16px;
   border: 2px solid rgb(230, 242, 255);
 }
@@ -368,7 +374,7 @@ Contact Styles
   justify-content: space-around;
 }
 .contact-paragraph a {
-  background-color: #333;
+  background: #333;
   box-shadow: 3px 0 2px 1px rgba(0, 0, 0, 0.5);
   display: block;
   padding: 1em;
@@ -376,7 +382,7 @@ Contact Styles
   width: 10em;
 }
 .contact-paragraph a:hover {
-  background-color: rgb(255, 102, 102);
+  background: rgb(255, 102, 102);
   box-shadow: 1px 1px 1px 1px rgba(0, 0, 0, 0.2);
   color: #333;
 }
@@ -384,8 +390,8 @@ Contact Styles
 Footer Styles
 ******************************************/
 #foot {
-  color: rgb(51, 51, 51);
-  background-color: rgb(102, 179, 255);
+  color: rgb(250, 250, 250);
+  background: #333;
   height: 70px;
   margin-top: 30px;
   padding-top: 35px;
@@ -393,7 +399,7 @@ Footer Styles
 }
 #foot a {
   text-align: center;
-  color: rgb(51, 51, 51);
+  color: rgb(250, 250, 250);
   float: none;
   padding-right: 0;
 }
