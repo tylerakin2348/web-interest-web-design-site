@@ -3,7 +3,6 @@ General Styles
 ******************************************/
 body {
   font-family: 'Roboto Condensed', sans-serif;
-  /*background: rgb(230, 242, 255);*/
   overflow-x: hidden; }
 
 img {
@@ -29,9 +28,8 @@ a {
   display: inline;
   padding-right: 10px;
   text-decoration: none; }
-
-a:hover {
-  color: #ff0c0c; }
+  a:hover {
+    color: #ff0c0c; }
 
 h2 {
   display: block;
@@ -48,10 +46,9 @@ Heading Styles
   position: absolute;
   top: 0;
   width: 100%; }
-
-#top-header img {
-  max-height: 100px;
-  max-width: 307px; }
+  #top-header img {
+    max-height: 100px;
+    max-width: 307px; }
 
 .blog-title a {
   color: #333333; }
@@ -72,23 +69,21 @@ Heading Styles
   transition: background 3.2s ease;
   width: 100%;
   z-index: 99; }
+  @media screen and (min-width: 750px) {
+    .main-navigation {
+      width: 50%; } }
+  @media screen and (min-width: 1050px) {
+    .main-navigation {
+      width: 33.3%; } }
+  .main-navigation a {
+    color: #333;
+    margin: 0 auto;
+    padding: 0 10px; }
+    .main-navigation a:hover {
+      text-decoration: underline; }
 
 .add-color {
   background: #ff6666; }
-
-.main-navigation a {
-  color: #333;
-  margin: 0 auto;
-  padding: 0 10px; }
-
-@media screen and (min-width: 750px) {
-  .main-navigation {
-    width: 50%; } }
-@media screen and (min-width: 1050px) {
-  .main-navigation {
-    width: 33.3%; } }
-.main-navigation a:hover {
-  text-decoration: underline; }
 
 .menu-main-menu-container {
   margin: 0 auto;
@@ -97,32 +92,28 @@ Heading Styles
 .menu-item-has-children {
   position: relative;
   transition: all 1s ease; }
-
-.menu-item-has-children .sub-menu {
-  max-height: 1em;
-  background: #333;
-  display: none;
-  font-size: 0.9rem;
-  line-height: 2;
-  position: absolute;
-  left: 0;
-  top: 4em; }
-
-.menu-item-has-children:hover {
-  padding-bottom: 9em; }
-
-@media screen and (min-width: 800px) {
+  .menu-item-has-children .sub-menu {
+    max-height: 1em;
+    background: #333;
+    display: none;
+    font-size: 0.9rem;
+    line-height: 2;
+    position: absolute;
+    left: 0;
+    top: 4em; }
+    .menu-item-has-children .sub-menu a {
+      color: #fff; }
   .menu-item-has-children:hover {
-    padding-bottom: 0; } }
-.menu-item-has-children:hover .sub-menu {
-  display: flex;
-  justify-content: center;
-  max-height: 25em;
-  width: 33.33vw;
-  z-index: 1; }
-
-.menu-item-has-children:hover .sub-menu a {
-  color: #fff; }
+    padding-bottom: 9em; }
+    @media screen and (min-width: 800px) {
+      .menu-item-has-children:hover {
+        padding-bottom: 0; } }
+    .menu-item-has-children:hover .sub-menu {
+      display: flex;
+      justify-content: center;
+      max-height: 25em;
+      width: 33.33vw;
+      z-index: 1; }
 
 #show-nav {
   background: inherit;
@@ -130,38 +121,35 @@ Heading Styles
   max-width: 70px;
   padding: 30px 10px 20px;
   text-align: center;
-  transition: background 2.8s, max-width .4s ease;
+  transition: background 2.8s, max-width 0.4s ease;
   margin: 0 0 0 10px;
   position: fixed;
   right: 0;
   top: 0;
   z-index: 100; }
-
-#show-nav:active {
-  /* Safari */
-  -webkit-transform: rotate(-20deg);
-  /* Firefox */
-  -moz-transform: rotate(-20deg);
-  /* IE */
-  -ms-transform: rotate(-20deg);
-  /* Opera */
-  -o-transform: rotate(-20deg); }
-
-#show-nav.active {
-  background: #333;
-  border: 2px solid #e6f2ff;
-  color: #fff;
-  /* Safari */
-  -webkit-transform: rotate(-20deg);
-  /* Firefox */
-  -moz-transform: rotate(-20deg);
-  /* IE */
-  -ms-transform: rotate(-20deg);
-  /* Opera */
-  -o-transform: rotate(-20deg); }
-
-#show-nav:hover {
-  max-width: 80px; }
+  #show-nav :active {
+    /* Safari */
+    -webkit-transform: rotate(-20deg);
+    /* Firefox */
+    -moz-transform: rotate(-20deg);
+    /* IE */
+    -ms-transform: rotate(-20deg);
+    /* Opera */
+    -o-transform: rotate(-20deg); }
+  #show-nav.active {
+    background: #333;
+    border: 2px solid #e6f2ff;
+    color: #fff;
+    /* Safari */
+    -webkit-transform: rotate(-20deg);
+    /* Firefox */
+    -moz-transform: rotate(-20deg);
+    /* IE */
+    -ms-transform: rotate(-20deg);
+    /* Opera */
+    -o-transform: rotate(-20deg); }
+  #show-nav :hover {
+    max-width: 80px; }
 
 /******************************************
 Design Options Blocks
@@ -170,35 +158,29 @@ Design Options Blocks
   display: flex;
   flex-wrap: wrap;
   position: relative; }
-
-/* Affects positioning of template blocks */
-#blocks div {
-  flex-direction: row;
-  justify-content: space-around;
-  margin: 1em auto 0;
-  max-width: 426px;
-  position: relative; }
-
-/* Affects positioning of hidden overlays */
-#blocks div div {
-  margin: -17.25em auto 0;
-  max-width: 426px;
-  position: relative; }
-
-@media screen and (min-width: 750px) {
   #blocks div {
-    max-width: 50%; }
-
+    /* Affects positioning of template blocks */
+    flex-direction: row;
+    justify-content: space-around;
+    margin: 1em auto 0;
+    max-width: 426px;
+    position: relative; }
+    @media screen and (min-width: 750px) {
+      #blocks div {
+        max-width: 50%; } }
+    @media screen and (min-width: 1050px) {
+      #blocks div {
+        max-width: 33.33%; } }
+    #blocks div img {
+      height: 16em; }
   #blocks div div {
-    max-width: 100%; } }
-@media screen and (min-width: 1050px) {
-  #blocks div {
-    max-width: 33.3%; }
-
-  #blocks div div {
-    max-width: 100%; } }
-#blocks div img {
-  height: 16em; }
+    /* Affects positioning of hidden overlays */
+    margin: -17.25em auto 0;
+    max-width: 426px;
+    position: relative; }
+    @media screen and (min-width: 750px) {
+      #blocks div div {
+        max-width: 100%; } }
 
 #template-block,
 #wordpress-block,
@@ -250,6 +232,13 @@ Hidden Design Block Styles
   border: 2px solid #fff;
   border-radius: 5px;
   position: absolute; }
+  .hide-info-button-scratch:hover,
+  .hide-info-button-template:hover,
+  .hide-info-button-word:hover {
+    color: #333;
+    background: #e6f2ff;
+    padding: 11px 16px;
+    border: 2px solid #e6f2ff; }
 
 .more-info-button-template,
 .more-info-button-scratch,
@@ -261,27 +250,21 @@ Hidden Design Block Styles
   border: 2px solid #fff;
   border-radius: 5px;
   position: absolute; }
-
-.more-info-button-template:hover,
-.more-info-button-scratch:hover,
-.more-info-button-word:hover {
-  color: #333;
-  background: #e6f2ff;
-  padding: 11px 10px;
-  border: 2px solid #e6f2ff; }
-
-.hide-info-button-template:hover,
-.hide-info-button-scratch:hover,
-.hide-info-button-word:hover {
-  color: #333;
-  background: #e6f2ff;
-  padding: 11px 16px;
-  border: 2px solid #e6f2ff; }
+  .more-info-button-template:hover,
+  .more-info-button-scratch:hover,
+  .more-info-button-word:hover {
+    color: #333;
+    background: #e6f2ff;
+    padding: 11px 10px;
+    border: 2px solid #e6f2ff; }
 
 /******************************************
 Page Tempalte Styles
 ******************************************/
-.page, .blog-page, .front-page, .full-width-page {
+.page,
+.blog-page,
+.front-page,
+.full-width-page {
   margin: 0 auto;
   min-height: 100%;
   text-align: left; }
@@ -289,9 +272,11 @@ Page Tempalte Styles
 .page {
   width: 90vw; }
 
-.blog-page .container__inner {
-  margin: 0 auto;
-  width: 90vw; }
+.blog-page {
+  margin-top: 10rem; }
+  .blog-page .container__inner {
+    margin: 0 auto;
+    width: 90vw; }
 
 .full-width-page {
   width: 90vw; }
@@ -304,9 +289,8 @@ About Styles
   flex-direction: row;
   flex-wrap: wrap;
   justify-content: space-between; }
-
-.about p {
-  margin: 3em auto 0; }
+  .about p {
+    margin: 3em auto 0; }
 
 #about-header {
   margin-top: 3em;
@@ -329,16 +313,16 @@ About Styles
   margin: 50px auto 0;
   max-width: 500px;
   text-align: center; }
+  @media screen and (min-width: 750px) {
+    .about-paragraph {
+      margin-top: 5em;
+      text-align: left; } }
+  @media screen and (min-width: 850px) {
+    .about-paragraph {
+      margin-top: 3em;
+      max-width: 40%;
+      text-align: left; } }
 
-@media screen and (min-width: 750px) {
-  .about-paragraph {
-    margin-top: 5em;
-    text-align: left; } }
-@media screen and (min-width: 850px) {
-  .about-paragraph {
-    margin-top: 3em;
-    max-width: 40%;
-    text-align: left; } }
 /******************************************
 Contact Styles
 ******************************************/
@@ -359,24 +343,22 @@ Contact Styles
   padding-bottom: 25px;
   font-size: 1.1em;
   line-height: 1.2em; }
+  .contact-paragraph a {
+    background: #333;
+    box-shadow: 3px 0 2px 1px rgba(0, 0, 0, 0.5);
+    display: block;
+    padding: 1em;
+    margin: 0 auto;
+    width: 10em; }
+    .contact-paragraph a:hover {
+      background: #ff6666;
+      box-shadow: 1px 1px 1px 1px rgba(0, 0, 0, 0.2);
+      color: #333; }
 
 .contact-info {
   display: flex;
   flex-wrap: wrap;
   justify-content: space-around; }
-
-.contact-paragraph a {
-  background: #333;
-  box-shadow: 3px 0 2px 1px rgba(0, 0, 0, 0.5);
-  display: block;
-  padding: 1em;
-  margin: 0 auto;
-  width: 10em; }
-
-.contact-paragraph a:hover {
-  background: #ff6666;
-  box-shadow: 1px 1px 1px 1px rgba(0, 0, 0, 0.2);
-  color: #333; }
 
 /******************************************
 Footer Styles
@@ -388,15 +370,11 @@ Footer Styles
   margin-top: 30px;
   padding-top: 35px;
   text-align: center; }
-
-#foot a {
-  text-align: center;
-  color: #fafafa;
-  float: none;
-  padding-right: 0; }
-
-#foot p {
-  padding-bottom: -20px; }
+  #foot a {
+    text-align: center;
+    color: #fafafa;
+    float: none;
+    padding-right: 0; }
 
 .design-labels {
   text-align: center; }
