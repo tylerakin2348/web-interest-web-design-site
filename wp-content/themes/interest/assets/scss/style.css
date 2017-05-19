@@ -16,7 +16,7 @@ li {
   text-decoration: none;
   list-style: none;
   float: left;
-  margin-left: 0 auto; }
+  margin: 0 auto; }
 
 ul {
   margin: 0 auto;
@@ -93,13 +93,14 @@ Heading Styles
   position: relative;
   transition: all 1s ease; }
   .menu-item-has-children .sub-menu {
-    max-height: 1em;
     background: #333;
     display: none;
     font-size: 0.9rem;
     line-height: 2;
-    position: absolute;
     left: 0;
+    margin-top: -6em;
+    max-height: 1em;
+    position: absolute;
     top: 4em; }
     .menu-item-has-children .sub-menu a {
       color: #fff; }
@@ -110,8 +111,12 @@ Heading Styles
         padding-bottom: 0; } }
     .menu-item-has-children:hover .sub-menu {
       display: flex;
+      transition: margin-top 3s ease;
+      line-height: 5em;
       justify-content: center;
+      margin-top: 0em;
       max-height: 25em;
+      min-height: 5em;
       width: 33.33vw;
       z-index: 1; }
 
