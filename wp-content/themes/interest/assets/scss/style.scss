@@ -93,6 +93,7 @@ Heading Styles
   margin: 0 auto;
   position: absolute;
 }
+
 .menu-item-has-children {
   position: relative;
   transition: all 1s ease;
@@ -106,30 +107,28 @@ Heading Styles
     max-height: 1em;
     position: absolute;
     top: 4em;
-    // transition: margin-top 3s ease;
     a {
       color: #fff;
     }
   }
-  &:hover {
-    padding-bottom: 9em;
+}
+.menu-item-has-children:hover {
+    // transition: all 3s ease;
+
     @media screen and (min-width: 800px) {
       padding-bottom: 0;
     }
     .sub-menu {
       display: flex;
-      transition: margin-top 3s ease;
-
-      line-height: 5em;
+      transition: all 3s ease;
       justify-content: center;
-      margin-top: 0em;
+      margin-top: 4em;
       max-height: 25em;
       min-height: 5em;
       width: 33.33vw;
       z-index: 1;
     }
   }
-}
 #show-nav {
   background: inherit;
   color: #333;
@@ -165,9 +164,10 @@ Heading Styles
       /* Opera */
       -o-transform: rotate(-20deg);
   }
-  :hover {
+  &:hover {
       max-width: 80px;
   }
+
 }
 
 /******************************************

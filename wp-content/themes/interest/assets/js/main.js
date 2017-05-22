@@ -42,7 +42,6 @@ $(".design-option-link").click(function() {
 
 $(".main-navigation").hide();
 
-
 $("#show-nav").click(function() {
   if ($(".main-navigation").is(":hidden")) {
     $(".main-navigation").slideDown("slow");

@@ -104,21 +104,19 @@ Heading Styles
     top: 4em; }
     .menu-item-has-children .sub-menu a {
       color: #fff; }
+
+@media screen and (min-width: 800px) {
   .menu-item-has-children:hover {
-    padding-bottom: 9em; }
-    @media screen and (min-width: 800px) {
-      .menu-item-has-children:hover {
-        padding-bottom: 0; } }
-    .menu-item-has-children:hover .sub-menu {
-      display: flex;
-      transition: margin-top 3s ease;
-      line-height: 5em;
-      justify-content: center;
-      margin-top: 0em;
-      max-height: 25em;
-      min-height: 5em;
-      width: 33.33vw;
-      z-index: 1; }
+    padding-bottom: 0; } }
+.menu-item-has-children:hover .sub-menu {
+  display: flex;
+  transition: all 3s ease;
+  justify-content: center;
+  margin-top: 4em;
+  max-height: 25em;
+  min-height: 5em;
+  width: 33.33vw;
+  z-index: 1; }
 
 #show-nav {
   background: inherit;
@@ -153,7 +151,7 @@ Heading Styles
     -ms-transform: rotate(-20deg);
     /* Opera */
     -o-transform: rotate(-20deg); }
-  #show-nav :hover {
+  #show-nav:hover {
     max-width: 80px; }
 
 /******************************************
