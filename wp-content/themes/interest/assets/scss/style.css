@@ -288,20 +288,42 @@ Page Tempalte Styles
 About Styles
 ******************************************/
 .about {
-  display: flex;
-  flex-direction: row;
-  flex-wrap: wrap;
-  justify-content: space-between; }
-  .about p {
-    margin: 3em auto 0; }
-
-#about-header {
-  margin-top: 3em;
-  margin-bottom: 80px;
+  background: #333;
+  color: #fff;
+  display: none;
+  height: auto;
+  margin: 0 auto;
+  padding: 5em 0;
+  position: fixed;
+  top: 25%;
   text-align: center;
-  font-size: 2em;
-  color: #333333;
-  clear: both; }
+  width: 100%; }
+  .about img {
+    padding-bottom: 3em; }
+    @media screen and (min-width: 750px) {
+      .about img {
+        padding-bottom: 0; } }
+  .about .svg {
+    cursor: pointer;
+    position: absolute;
+    right: 2rem;
+    top: 2rem;
+    width: 2rem; }
+  .about p {
+    bottom: 0;
+    left: 0;
+    right: 0;
+    top: 0;
+    height: 30%;
+    margin: auto; }
+
+.shadow-box {
+  transition: all 2.8s ease;
+  display: flex;
+  flex-direction: column; }
+  @media screen and (min-width: 750px) {
+    .shadow-box {
+      flex-direction: row; } }
 
 #tyler-about-pic {
   border-radius: 100px;
@@ -330,14 +352,30 @@ About Styles
 Contact Styles
 ******************************************/
 .contact {
-  display: block; }
-
-#contact-header {
-  margin-top: 100px;
-  margin-bottom: 80px;
+  background: #333;
+  color: #fff;
+  display: none;
+  height: auto;
+  margin: 0 auto;
+  padding: 5em 0;
+  position: fixed;
+  top: 25%;
   text-align: center;
-  font-size: 2em;
-  color: #333333; }
+  width: 100%; }
+  .contact .svg {
+    cursor: pointer;
+    position: absolute;
+    right: 2rem;
+    top: 2rem;
+    width: 2rem; }
+
+.shadow-box {
+  transition: all 2.8s ease;
+  display: flex;
+  flex-direction: column; }
+  @media screen and (min-width: 750px) {
+    .shadow-box {
+      flex-direction: row; } }
 
 .contact-paragraph {
   text-align: center;

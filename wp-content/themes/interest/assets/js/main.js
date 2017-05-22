@@ -67,6 +67,44 @@ $('#show-nav').click(function() {
   }
 });
 
+
+$('#menu-item-122').click(function() {
+  return false;
+});
+
+$('#menu-item-123').click(function() {
+  return false;
+});
+
+$('#menu-item-122').click(function() {
+    $('.contact').addClass('shadow-box');
+    if ($('.about').hasClass('shadow-box')) {
+        $('.about').removeClass('shadow-box');
+    }
+});
+
+$('#menu-item-123').click(function() {
+    $('.about').addClass('shadow-box');
+    if ($('.contact').hasClass('shadow-box')) {
+        $('.contact').removeClass('shadow-box');
+    }
+});
+
+$('.svg').click(function() {
+    if ($('.about').hasClass('shadow-box')) {
+        $('.about').removeClass('shadow-box');
+    }
+    if ($('.contact').hasClass('shadow-box')) {
+        $('.contact').removeClass('shadow-box');
+    }
+});
+
+// if ($('.contact').hasClass('shadow-box')) {
+//     $('.about').removeClass('shadow-box');
+//     } else if ($('.about').hasClass('shadow-box')) {
+//         $('.contact').removeClass('shadow-box');
+//     }
+
 // This hides the design option info that slides up in blue.
 
 //Template info
