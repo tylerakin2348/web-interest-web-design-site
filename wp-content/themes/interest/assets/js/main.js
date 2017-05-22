@@ -67,6 +67,9 @@ $('#show-nav').click(function() {
   }
 });
 
+$('#menu-item-155').click(function() {
+  return false;
+});
 
 $('#menu-item-122').click(function() {
   return false;
@@ -98,12 +101,6 @@ $('.svg').click(function() {
         $('.contact').removeClass('shadow-box');
     }
 });
-
-// if ($('.contact').hasClass('shadow-box')) {
-//     $('.about').removeClass('shadow-box');
-//     } else if ($('.about').hasClass('shadow-box')) {
-//         $('.contact').removeClass('shadow-box');
-//     }
 
 // This hides the design option info that slides up in blue.
 

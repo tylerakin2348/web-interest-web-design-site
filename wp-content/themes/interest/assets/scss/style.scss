@@ -91,24 +91,41 @@ Heading Styles
 }
 .menu-main-menu-container {
   margin: 0 auto;
-  position: absolute;
+  // position: absolute;
 }
 
 .menu-item-has-children {
   position: relative;
   transition: all 1s ease;
   .sub-menu {
-    background: #333;
-    display: none;
-    font-size: 0.9rem;
-    line-height: 2;
-    left: 0;
-    margin-top: -6em;
-    max-height: 1em;
-    position: absolute;
-    top: 4em;
+      background: #333;
+      border: 2px solid #e6f2ff;
+      color: #333333;
+      display: flex;
+      justify-content: center;
+      font-size: 1rem;
+      flex-direction: row;
+      list-style: none;
+      margin-top: -2em;
+      min-height: 5em;
+      opacity: 0;
+      position: fixed;
+      line-height: 5em;
+      right: 0;
+      top: 7em;
+      width: 100%;
+      z-index: 99;
+      @media screen and (min-width: 750px) {
+        width: 50%;
+      }
+      @media screen and (min-width: 1050px) {
+        width:33.33%;
+      }
     a {
       color: #fff;
+    }
+    li {
+        font-size: 1rem;
     }
   }
 }
@@ -119,14 +136,13 @@ Heading Styles
       padding-bottom: 0;
     }
     .sub-menu {
-      display: flex;
       transition: all 3s ease;
       justify-content: center;
       margin-top: 4em;
       max-height: 25em;
       min-height: 5em;
-      width: 33.33vw;
-      z-index: 1;
+      opacity: 1;
+      z-index: -1;
     }
   }
 #show-nav {
@@ -411,7 +427,7 @@ Contact Styles
     display: flex;
     flex-direction: column;
     @media screen and (min-width: 750px) {
-        flex-direction: row;
+        // flex-direction: row;
 
     }
     @media screen and (min-width: 1050px) {
@@ -419,12 +435,15 @@ Contact Styles
 }
 
 .contact-paragraph {
-  text-align: center;
-  display: block;
-  margin: 0 1% 2em;
-  padding-bottom: 25px;
-  font-size: 1.1em;
-  line-height: 1.2em;
+    text-align: center;
+    display: block;
+    margin: 0 auto;
+    margin-bottom: 2rem;
+    padding-bottom: 25px;
+    font-size: 1.1em;
+    line-height: 1.2em;
+    max-width: 45rem;
+
   a {
       background: #333;
       box-shadow: 3px 0 2px 1px rgba(0, 0, 0, 0.5);
@@ -443,6 +462,9 @@ Contact Styles
   display: flex;
   flex-wrap: wrap;
   justify-content: space-around;
+  margin: 0 auto;
+  width: 75vw;
+    max-width: 50rem;
 }
 
 /******************************************
