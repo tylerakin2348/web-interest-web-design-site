@@ -103,7 +103,6 @@ $('.svg').click(function() {
 });
 
 // This hides the design option info that slides up in blue.
-
 //Template info
 $(".hide-info-button-template").click(function() {
   if ($(".design-info-maintain").is(":hidden")) {
@@ -129,14 +128,3 @@ $(".hide-info-button-scratch").click(function() {
     $(".design-info-scratch").hide();
   }
 });
-
-
-
-// Greensocks Button Animation
-
-
-// TweenLite.to(div, 1, {x:100});
-//
-//   $(".template-hidden").hide(); // text of blue section
-//   $(".design-info-maintain").hide(); // blue overlay
-// });

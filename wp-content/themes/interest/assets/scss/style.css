@@ -168,6 +168,11 @@ Heading Styles
   #show-nav:hover {
     max-width: 80px; }
 
+img.homepage_image {
+  height: auto;
+  width: 100%;
+  max-height: calc(100vh - 90px); }
+
 /******************************************
 Design Options Blocks
 ******************************************/

@@ -91,7 +91,6 @@ Heading Styles
 }
 .menu-main-menu-container {
   margin: 0 auto;
-  // position: absolute;
 }
 
 .menu-item-has-children {
@@ -130,7 +129,6 @@ Heading Styles
   }
 }
 .menu-item-has-children:hover {
-    // transition: all 3s ease;
 
     @media screen and (min-width: 800px) {
       padding-bottom: 0;
@@ -186,6 +184,14 @@ Heading Styles
 
 }
 
+img.homepage_image {
+    height: auto;
+    // max-height: 25rem;
+    width: 100%;
+    // @media screen and (min-width: 1050px) {
+        max-height: calc(100vh - 90px);
+    // }
+}
 /******************************************
 Design Options Blocks
 ******************************************/
